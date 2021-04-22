@@ -5,7 +5,64 @@
 }
 
 .mainHeader__nav {
-  display: none;
+  position: absolute;
+  top: 112px;
+  left: 0;
+  background-color: #FFCD4C;
+  width: 324px;
+  height: calc(100vh - 112px);
+  padding: 84px 0 0 96px;
+}
+
+.mainHeader__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #161616;
+}
+
+.mainHeader__item {
+  width: 100%;
+  position: initial;
+  padding: 15.5px 0 11.5px 24px;
+  line-height: 21px;
+}
+
+.mainHeader__item__title::after {
+  -webkit-transform: translateX(100%) translateY(-50%) rotateZ(-90deg);
+          transform: translateX(100%) translateY(-50%) rotateZ(-90deg);
+  background-image: url(../images/small-arrow-black.svg);
+  right: 0;
+}
+
+.mainHeader__submenu {
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  padding: 84px 0 0 0;
+}
+
+.mainHeader__submenu__item {
+  padding: 15.5px 0 11.5px 24px;
+}
+
+.mainHeader__item:hover {
+  background: #161616;
+  color: #F5F5F5;
+}
+
+.mainHeader__item:hover .mainHeader__item__title::after {
+  background-image: url(../images/small-arrow-white.svg);
+  -webkit-transform: translateX(500%) translateY(-50%) rotateZ(-90deg);
+          transform: translateX(500%) translateY(-50%) rotateZ(-90deg);
 }
 
 .container {
@@ -14,4 +71,44 @@
   -ms-grid-row: 2;
   grid-row: 2;
 }
-/*# sourceMappingURL=homePage.css.map */
+
+.container .topSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 444px);
+  height: calc(100vh - 112px);
+  margin: 0 120px 0 324px;
+  background: url(../images/footer-background-lines.svg) no-repeat;
+  background-position: center;
+  background-color: #EBEBEB;
+  position: relative;
+}
+
+.container .topSection::after {
+  content: '';
+  width: 120px;
+  height: 164px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background: #161616;
+}
+
+.container .topSection__banner {
+  width: 792px;
+  height: 512px;
+}
+/*# sourceMappingURL=HomePage.css.map */

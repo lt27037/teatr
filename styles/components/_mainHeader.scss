@@ -15,7 +15,7 @@
   }
   &__language{
     font-weight: 900;
-    font-size: 16px;
+    font-size: 14px;
     color: $lightFont-100;
     background: transparent;
     border: none;
@@ -41,7 +41,7 @@
     height: 112px;
   }
   &__item{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     height: 74px;
     margin-top: auto;
@@ -60,7 +60,8 @@
         background-position: center;
         position: absolute;
         right: 0;
-        transform: translateX(100%);
+        top: 50%;
+        transform: translateX(100%) translateY(50%);
 
       }
     }
@@ -78,7 +79,7 @@
     color: $lightFont-100;
     &__item{
       font-weight: 700;
-      font-size: 16px;
+      font-size: 14px;
       padding: 12px 24px;
       width: 100%;
       text-align: left;

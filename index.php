@@ -11,7 +11,12 @@
 <body>
   <?php @include './components/mainHeader.php' ?>
   <div class="container">
-    kontent
+    <section class="topSection">
+      <img src="./images/topSection-baner.png" alt="Baner" class="topSection__banner">
+    </section>
+    <section class="newsSection">
+      
+    </section>
   </div>
   <?php @include './components/footer.php' ?>
 </body>
