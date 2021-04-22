@@ -1,10 +1,16 @@
 @import 'reset';
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700;800;900&family=Exo:wght@800;900&display=swap');
 @import './components/mainHeader';
+@import './components/footer';
 @import './components/buttons';
 
 body{
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 112px 1fr 712px;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
 }

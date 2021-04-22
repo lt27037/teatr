@@ -23,8 +23,9 @@
     text-decoration: underline;
   }
   &__wrapper{
-    width: 100%;
     @include elementFlex(row, stretch, center);
+    width: 100%;
+    grid-row: 1;
     .button{
       width: 198px;
       height: 112px;

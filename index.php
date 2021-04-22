@@ -9,5 +9,9 @@
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
+  <div class="container">
+    kontent
+  </div>
+  <?php @include './components/footer.php' ?>
 </body>
 </html>
