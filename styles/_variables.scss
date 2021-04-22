@@ -1,0 +1,48 @@
+// Accents
+$mainBlue: #142581;
+$mainYellow: #FFCD4C;
+
+// Backgrounds 
+$lightBgc-100: #F5F5F5;
+$lightBgc-90: #EBEBEB;
+$lightBgc-80: #DBDBDB;
+$lightBgc-70: #CCCCCC;
+$lightBgc-60: #BDBDBD;
+$lightBgc-50: #ADADAD;
+$lightBgc-40: #949494;
+$lightBgc-30: #7A7A7A;
+
+$darkBgc-100: #161616;
+$darkBgc-90: #363636;
+$darkBgc-80: #545454;
+$darkBgc-70: #737373;
+$darkBgc-60: #919191;
+$darkBgc-50: #B0B0B0;
+$darkBgc-40: #CCCCCC;
+
+// Fonts
+$lightFont-100: #F5F5F5;
+$lightFont-90: #EBEBEB;
+$lightFont-50: #ADADAD;
+$lightFont-30: #7A7A7A;
+
+$darkFont-100: #161616;
+
+// Buttons
+$colorPrimary-100: #3185FC;
+$colorPrimary-90: #0364EC;
+$colorPrimary-80: #034AB0;
+
+// mixins
+@mixin elementFlex($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin selfPosition($justify, $align){
+  justify-self: $justify;
+  align-self: $align;
+}
+

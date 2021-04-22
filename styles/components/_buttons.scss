@@ -1,0 +1,60 @@
+@import '../variables';
+
+.button{
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 900;
+  border: none;
+  font-family: 'Exo', sans-serif;
+  &.button--primary{
+    background: $colorPrimary-100;
+    color: $lightFont-100;
+    &:hover{
+      background: $colorPrimary-90;
+    }
+    &:active{
+      background: $colorPrimary-80;
+    }
+    &:disabled{
+      background: $darkBgc-50;
+      color: $lightFont-30;
+    }
+    &:focus{
+      background: $colorPrimary-90;
+    }
+  }
+  &.button--secondary{
+    background: $darkBgc-100;
+    color: $lightFont-100;
+    &:hover{
+      background: $darkBgc-80;
+    }
+    &:active{
+      background: $darkBgc-50;
+    }
+    &:disabled{
+      background: $darkBgc-50;
+      color: $lightFont-30;
+    }
+    &:focus{
+      background: $darkBgc-80;
+    }
+  }
+  &.button--ghost{
+    background: transparent;
+    color: $colorPrimary-100;
+    &:hover{
+      background: $lightBgc-90;
+    }
+    &:active{
+      background: $darkBgc-40;
+    }
+    &:disabled{
+      background: $darkBgc-50;
+      color: $lightFont-30;
+    }
+    &:focus{
+      background: $lightBgc-90;
+    }
+  }
+}

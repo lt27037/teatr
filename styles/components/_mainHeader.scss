@@ -1,0 +1,102 @@
+@import '../variables';
+
+.mainHeader{
+  @include elementFlex(row, stretch, center);
+  width: 80%;
+  height: 112px;
+  background-color: $darkBgc-100;
+  padding: 0 45px 0 120px;
+  flex-grow: 1;
+  color: $lightFont-100;
+  .logo{
+    path{
+      fill: #c4c4c4;
+    }
+  }
+  &__language{
+    font-weight: 900;
+    font-size: 16px;
+    color: $lightFont-100;
+    background: transparent;
+    border: none;
+    font-family: 'Exo', sans-serif;
+    text-decoration: underline;
+  }
+  &__wrapper{
+    width: 100%;
+    @include elementFlex(row, stretch, center);
+    .button{
+      width: 198px;
+      height: 112px;
+    }
+  }
+  &__nav{
+    flex-grow: 1;
+    padding: 0 36px;
+  }
+  &__list{
+    @include elementFlex(row, flex-start, center);
+    list-style: none;
+    height: 112px;
+  }
+  &__item{
+    font-size: 16px;
+    font-weight: 700;
+    height: 74px;
+    margin-top: auto;
+    padding: 13px 12px 40px 12px;
+    cursor: pointer;
+    position: relative;
+    &__title{
+      position: relative;
+      margin-right: 24px;
+      &::after{
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/small-arrow-white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        right: 0;
+        transform: translateX(100%);
+
+      }
+    }
+  }
+  &__submenu{
+    @include elementFlex(column, flex-start, flex-start);
+    display: none;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    background: $darkBgc-100;
+    width: 324px;
+    color: $lightFont-100;
+    &__item{
+      font-weight: 700;
+      font-size: 16px;
+      padding: 12px 24px;
+      width: 100%;
+      text-align: left;
+      &:hover{
+        background-color: $mainYellow;
+        color: $darkFont-100;
+      }
+    }
+  }
+  &__item:hover{
+    background: $mainYellow;
+    color: $darkFont-100;
+    .mainHeader__submenu{
+      display: flex;
+    }
+    .mainHeader__item__title{
+      &::after{
+        background-image: url(../images/small-arrow-black.svg);
+      }
+    }
+  }
+}
