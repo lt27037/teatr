@@ -1,0 +1,52 @@
+@import '../variables';
+@import '../components/primaryArticle';
+
+.secondaryEvent{
+  width: 608px;
+  height: 418px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  column-gap: 24px;
+  &__picture{
+    width: 282px;
+    height: 188px;
+  }
+  &__container{
+    @extend .primaryArticle__container;
+  }
+  &__date{
+    @extend .primaryArticle__date;
+    color: $lightFont-100;
+  }
+  &__title{
+    @extend .primaryArticle__title;
+    margin-bottom: 12px;
+  }
+  &__info{
+    @include elementFlex(column, flex-start, flex-start);
+    padding: 12px 0;
+    &__title{
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      color: $lightFont-100;
+    }
+    &__content{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px; 
+      color: $lightFont-100;
+    }
+  }
+  &__wrapper{
+    @include elementFlex(row, flex-start, center);
+    .secondaryEvent__info:nth-of-type(2){
+      margin-left: 72px;
+    }
+  }
+  &__button{
+    @extend .primaryArticle__button;
+    margin-top: 36px;
+  }
+}

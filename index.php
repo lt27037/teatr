@@ -30,6 +30,9 @@
         </div>
       </div>
     </section>
+    <section class="programSection">
+      <?php @include './components/secondaryEvent.php' ?>
+    </section>
   </main>
   <?php @include './components/footer.php' ?>
 </body>

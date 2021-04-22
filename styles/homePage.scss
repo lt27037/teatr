@@ -81,11 +81,11 @@
     @include elementFlex(column, flex-start, center);
     width: 100%;
     min-height: 100vh;
-    padding: 0 120px;
+    padding: 96px 120px 120px 120px;
     &__header{
       @include elementFlex(row, space-between, center);
       width: 100%;
-      padding: 96px 0 48px 0;
+      padding: 0 0 48px 0;  
     }
     &__title{
       font-size: 36px;
@@ -115,6 +115,35 @@
       @extend .newsSection__mainArticle;
       grid-column: 2;
 
+    }
+  }
+  .programSection{
+    width: 100%;
+    min-height: 100vh;
+    padding: 96px 120px 120px 120px;
+    background-color: $darkBgc-100;
+    margin-top: 144px;
+    position: relative;
+    color: $lightFont-100;
+    &::after{
+      content: '';
+      width: 100%;
+      height: 96px;
+      position: absolute;
+      background: $mainYellow;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+    }
+    &::before{
+      content: '';
+      width: 120px;
+      height: 48px;
+      position: absolute;
+      top: -96px;
+      left: 0;
+      background: $darkBgc-100;
+      transform: translateY(-100%);
     }
   }
 }
