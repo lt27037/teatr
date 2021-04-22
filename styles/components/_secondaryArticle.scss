@@ -1,0 +1,20 @@
+@import '../variables';
+@import '../components/primaryArticle';
+
+.secondaryArticle{
+  @include elementFlex(column, flex-start, flex-start);
+  margin: 24px 0 54px 0;
+  &__date{
+    @extend .primaryArticle__date;
+  }
+  &__title{
+    @extend .primaryArticle__title;
+  }
+  &__fragment{
+    @extend .primaryArticle__fragment;
+  }
+  &__button{
+    @extend .primaryArticle__button;
+  }
+
+}

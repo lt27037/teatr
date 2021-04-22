@@ -24,7 +24,9 @@
           <?php @include './components/primaryArticle.php' ?>
         </div>
         <div class="newsSection__articles">
-
+          <?php @include './components/secondaryArticle.php' ?>
+          <?php @include './components/secondaryArticle.php' ?>
+          <?php @include './components/secondaryArticle.php' ?>
         </div>
       </div>
     </section>
