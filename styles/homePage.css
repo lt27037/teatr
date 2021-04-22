@@ -131,7 +131,7 @@
   padding: 96px 120px 120px 120px;
 }
 
-.container .newsSection__header {
+.container .newsSection__header, .container .programSection__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,12 +149,12 @@
   padding: 0 0 48px 0;
 }
 
-.container .newsSection__title {
+.container .newsSection__title, .container .programSection__title {
   font-size: 36px;
   font-weight: 900;
 }
 
-.container .newsSection__viewAll {
+.container .newsSection__viewAll, .container .programSection__viewAll {
   color: #3185FC;
   font-size: 16px;
   font-weight: 900;
@@ -231,4 +231,4 @@
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
-/*# sourceMappingURL=homePage.css.map */
+/*# sourceMappingURL=HomePage.css.map */

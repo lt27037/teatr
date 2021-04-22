@@ -31,6 +31,10 @@
       </div>
     </section>
     <section class="programSection">
+      <header class="programSection__header">
+        <h2 class="programSection__title">Program festiwalu</h2>
+        <a href="" class="programSection__viewAll">Zobacz wszystkie</a>
+      </header>
       <?php @include './components/secondaryEvent.php' ?>
     </section>
   </main>

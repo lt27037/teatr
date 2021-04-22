@@ -145,5 +145,14 @@
       background: $darkBgc-100;
       transform: translateY(-100%);
     }
+    &__header{
+      @extend .newsSection__header;
+    }
+    &__title{
+      @extend .newsSection__title 
+    }
+    &__viewAll{
+      @extend .newsSection__viewAll;
+    }
   }
 }
