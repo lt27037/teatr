@@ -45,6 +45,7 @@
 .mainHeader__submenu {
   right: 0;
   top: 0;
+  z-index: 100;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   padding: 84px 0 0 0;
@@ -131,7 +132,7 @@
   padding: 96px 120px 120px 120px;
 }
 
-.container .newsSection__header, .container .programSection__header {
+.container .newsSection__header, .container .programSection__header, .container .archivesSection__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,12 +150,12 @@
   padding: 0 0 48px 0;
 }
 
-.container .newsSection__title, .container .programSection__title {
+.container .newsSection__title, .container .programSection__title, .container .archivesSection__title {
   font-size: 36px;
   font-weight: 900;
 }
 
-.container .newsSection__viewAll, .container .programSection__viewAll {
+.container .newsSection__viewAll, .container .programSection__viewAll, .container .archivesSection__viewAll {
   color: #3185FC;
   font-size: 16px;
   font-weight: 900;
@@ -231,4 +232,64 @@
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
-/*# sourceMappingURL=HomePage.css.map */
+
+.container .archivesSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 96px 120px 120px 120px;
+  position: relative;
+}
+
+.container .archivesSection::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 96px;
+  background-color: #EBEBEB;
+}
+
+.container .archivesSection__header {
+  padding-bottom: 51px;
+}
+
+.container .archivesSection__item {
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #161616;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+}
+
+.container .archivesSection__item__content {
+  font-size: 14px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=homePage.css.map */

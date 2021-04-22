@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/favicon.ico"/>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/homePage.css">
-  <title>Teatr polski w Poznaniu</title>
+  <title>Teatr Polski w Poznaniu | Strona główna</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
@@ -36,6 +37,28 @@
         <a href="" class="programSection__viewAll">Zobacz wszystkie</a>
       </header>
       <?php @include './components/secondaryEvent.php' ?>
+    </section>
+    <section class="archivesSection">
+      <header class="archivesSection__header">
+        <h2 class="archivesSection__title">Archiwum</h2>
+        <a href="" class="archivesSection__viewAll">Zobacz wszystkie</a>
+      </header>
+      <article class="archivesSection__item">
+        <span class="archivesSection__item__content">Ukraina</span>
+        <span class="archivesSection__item__content">2019</span>
+      </article>
+      <article class="archivesSection__item">
+        <span class="archivesSection__item__content">Polska</span>
+        <span class="archivesSection__item__content">2018</span>
+      </article>
+      <article class="archivesSection__item">
+        <span class="archivesSection__item__content">One</span>
+        <span class="archivesSection__item__content">2015</span>
+      </article>
+      <article class="archivesSection__item">
+        <span class="archivesSection__item__content">Kain i Abel</span>
+        <span class="archivesSection__item__content">2014</span>
+      </article>
     </section>
   </main>
   <?php @include './components/footer.php' ?>
