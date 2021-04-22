@@ -1,0 +1,13 @@
+@import 'variables';
+
+.mainHeader{
+  justify-content: space-between;
+  &__nav{
+    display: none;
+  }
+}
+
+.container{
+  @include defaultContainer;
+
+}

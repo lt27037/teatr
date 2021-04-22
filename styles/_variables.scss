@@ -46,3 +46,8 @@ $colorPrimary-80: #034AB0;
   align-self: $align;
 }
 
+@mixin defaultContainer{
+  width: 100%;
+  min-height: 100vh ;
+  grid-row: 2;
+}
