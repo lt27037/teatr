@@ -10,14 +10,25 @@
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <div class="container">
+  <main class="container">
     <section class="topSection">
       <img src="./images/topSection-baner.png" alt="Baner" class="topSection__banner">
     </section>
     <section class="newsSection">
-      
+      <header class="newsSection__header">
+        <h2 class="newsSection__title">Aktualnie</h2>
+        <a href="" class="newsSection__viewAll">Zobacz wszystkie</a>
+      </header>
+      <div class="newsSection__wrapper">
+        <div class="newsSection__mainArticle">
+          <?php @include './components/primaryArticle.php' ?>
+        </div>
+        <div class="newsSection__articles">
+
+        </div>
+      </div>
     </section>
-  </div>
+  </main>
   <?php @include './components/footer.php' ?>
 </body>
 </html>
