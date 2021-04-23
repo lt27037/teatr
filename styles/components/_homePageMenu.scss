@@ -1,0 +1,81 @@
+@import '../variables';
+@import 'mainHeader';
+
+.homePageMenu{
+  &__nav{
+    @extend .mainHeader__nav;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $mainYellow;
+    width: 324px;
+    height: calc(100vh - 112px);
+    padding: 84px 0 0 96px;
+  }
+  &__list{
+    @extend .mainHeader__list;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: $darkFont-100;
+    opacity: 1;
+  }
+  &__item{
+    @extend .mainHeader__item;
+    width: 100%;
+    position: initial;
+    padding: 0 0 0 24px;
+    height: 48px;
+    line-height: 21px;
+    color: $darkFont-100;
+    a{
+      @include elementFlex(row, flex-start, center);
+      @include font700($darkFont-100);
+      padding: 0;
+      height: 48px;
+    }
+    &__title{
+      &::after{
+        transform: translateX(100%) translateY(-50%) rotateZ(-90deg);
+        background-image: url(../images/small-arrow-black.svg);
+        right: 0;
+      }
+    }
+  }
+  &__submenu{
+    @extend .mainHeader__submenu;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    padding: 84px 0 0 0;
+    a{
+      padding: 0;
+      width: 100%;
+      height: 48px;
+    }
+    &__item{
+      @extend .mainHeader__item;
+      @include elementFlex(row, flex-start, center);
+      padding: 0 0 0 24px;
+      height: 48px;
+      width: 100%;
+      &:hover{
+        color: $darkFont-100;
+      }
+    }
+  }
+  &__item:hover{
+    background: $darkBgc-100;
+    a{
+      color: $lightFont-100;
+    }
+    .mainHeader__item__title{
+      &::after{
+        background-image: url(../images/small-arrow-white.svg);
+        transform: translateX(500%) translateY(-50%) rotateZ(-90deg);
+      }
+    }
+  }
+}

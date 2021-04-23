@@ -25,7 +25,10 @@
     <a href="" class="footer__link">Facebook</a>
   </div>
   </section>
-  <div class="footer__toTop">
-    <a href="" class="footer__link">na górę</a>
+  <div class="footer__toTop" onClick={handleToTop()}>
+    <span class="footer__link">na górę</span>
   </div>
 </footer>
+<script>
+  const handleToTop = () => window.scrollTo(0, 0);
+</script>

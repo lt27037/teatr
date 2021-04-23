@@ -1,6 +1,7 @@
 @import '../variables';
 
 .mainHeader{
+  z-index: 999;
   @include elementFlex(row, stretch, center);
   width: 80%;
   height: 112px;
@@ -23,6 +24,8 @@
     text-decoration: underline;
   }
   &__wrapper{
+    z-index: 999;
+    position: fixed;
     @include elementFlex(row, stretch, center);
     width: 100%;
     grid-row: 1;
@@ -87,12 +90,16 @@
     color: $lightFont-100;
     a{
       width: 100%;
+      height: 48px;
+      padding: 0;
     }
     &__item{
+      @include elementFlex(row, flex-start, center);
       font-weight: 700;
       font-size: 14px;
-      padding: 12px 24px;
       width: 100%;
+      padding: 0 0 0 12px;
+      height: 48px;
       text-align: left;
       a{
         text-decoration: none;

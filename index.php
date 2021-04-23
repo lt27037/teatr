@@ -9,6 +9,7 @@
   <?php @include './components/mainHeader.php' ?>
   <main class="container">
     <section class="topSection">
+      <?php @include './components/homePageMenu.php' ?>
       <img src="./images/topSection-baner.png" alt="Baner" class="topSection__banner">
     </section>
     <section class="newsSection">
@@ -80,6 +81,9 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
   <script src="owl/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
   <script>
     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
@@ -103,6 +107,20 @@
     const handleNext = () => document.querySelector('.owl-next').click();
     const handlePrev = () => document.querySelector('.owl-prev').click();
 
+    gsap.fromTo('.mainHeader__list', {
+      visibility: 'hidden',
+      opacity: 0
+    }, {
+      visibility: 'visible',
+      scrollTrigger: {
+        trigger: '.topSection',
+        start: 'top top',
+        scrub: true,
+      },
+      opacity: 1,
+      duration: 0.2,
+    });
+    
   </script>
 </body>
 </html>
