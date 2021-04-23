@@ -43,6 +43,7 @@
   &.button--ghost{
     background: transparent;
     color: $colorPrimary-100;
+    padding: 12px;
     &:hover{
       background: $lightBgc-90;
     }

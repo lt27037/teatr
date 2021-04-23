@@ -430,6 +430,7 @@
 .button.button--ghost {
   background: transparent;
   color: #3185FC;
+  padding: 12px;
 }
 
 .button.button--ghost:hover {
