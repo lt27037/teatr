@@ -45,12 +45,21 @@
     font-weight: 700;
     height: 74px;
     margin-top: auto;
-    padding: 13px 12px 40px 12px;
     cursor: pointer;
     position: relative;
+    a{
+      padding: 13px 12px 40px 12px;
+      text-decoration: none;
+      color: $lightFont-100;
+      display: block;
+    }
     &__title{
       position: relative;
       margin-right: 24px;
+      a{
+        text-decoration: none;
+        color: $lightFont-100;
+      }
       &::after{
         content: '';
         width: 24px;
@@ -59,10 +68,9 @@
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateX(100%) translateY(50%);
-
+        right: 10px;
+        top: 10px;
+        transform: translateX(100%) translateY(0%);
       }
     }
   }
@@ -77,12 +85,19 @@
     background: $darkBgc-100;
     width: 324px;
     color: $lightFont-100;
+    a{
+      width: 100%;
+    }
     &__item{
       font-weight: 700;
       font-size: 14px;
       padding: 12px 24px;
       width: 100%;
       text-align: left;
+      a{
+        text-decoration: none;
+        color: $lightFont-100;
+      }
       &:hover{
         background-color: $mainYellow;
         color: $darkFont-100;
@@ -91,9 +106,14 @@
   }
   &__item:hover{
     background: $mainYellow;
-    color: $darkFont-100;
+    a{
+      color: $darkFont-100;
+    }
     .mainHeader__submenu{
       display: flex;
+      a{
+        color: $lightFont-100;
+      }
     }
     .mainHeader__item__title{
       &::after{
