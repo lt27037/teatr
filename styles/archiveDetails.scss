@@ -1,0 +1,94 @@
+@import 'variables';
+
+.container{
+  @include defaultContainer;
+  padding: 96px 120px 48px 120px;
+  &__header{
+    @include elementFlex(row, flex-start, center);
+    width: 100%;
+  }
+  &__title{
+    @include mainTitle;
+    margin-bottom: 48px;
+  }
+  .details{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 48px;
+    margin-bottom: 120px;
+    &__leftBar{
+      @include elementFlex(column, flex-start, flex-start);
+      width: 100%;
+    }
+    &__element{
+      @include elementFlex(column, flex-start, flex-start);
+      padding: 0 0 24px 0;
+      &__title{
+        @include font700($darkFont-100);
+      }
+      &__content{
+        @include font500($darkFont-100);
+      }
+    }
+    &__rightBar{
+      @include elementFlex(column, flex-start, flex-start);
+      width: 100%;
+    }
+    &__text{
+      @include font500($darkFont-100);
+    }
+    &__nav{
+      width: 100%;
+      height: 96px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      &__button{
+        @include elementFlex(row, flex-start, center);
+        width: 100%;
+        border-style: none;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: 'Exo', sans-serif;
+        padding: 0 84px;
+        outline: none;
+        position: relative;
+        &::after{
+          content: '';
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+        }
+      }
+      &__button.button--prev{
+        background: $lightBgc-90;
+        color: $lightFont-50;
+        &:hover{
+          background-color: $lightBgc-80;
+        }
+        &::after{
+          top: 50%;
+          left: 24px;
+          transform: translateY(-50%);
+          background-image: url('../images/arrow_back.svg');
+        }
+      }
+      &__button.button--next{
+        background: $darkBgc-100;
+        color: $colorPrimary-100;
+        justify-content: flex-end;
+        &:hover{
+          background-color: $darkBgc-90;
+        }
+        &::after{
+          top: 50%;
+          right: 24px;
+          transform: translateY(-50%);
+          background-image: url('../images/arrow_forward-blue.svg');
+        }
+      }
+    }
+  }
+}
