@@ -210,6 +210,10 @@
   color: #F5F5F5;
 }
 
+.container .programSection__title {
+  color: #F5F5F5;
+}
+
 .container .programSection .owl-prev,
 .container .programSection .owl-next {
   visibility: hidden;
@@ -340,4 +344,4 @@
   font-size: 14px;
   font-weight: 700;
 }
-/*# sourceMappingURL=homePage.css.map */
+/*# sourceMappingURL=HomePage.css.map */

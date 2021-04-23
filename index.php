@@ -14,7 +14,9 @@
     <section class="newsSection">
       <header class="newsSection__header">
         <h2 class="newsSection__title">Aktualnie</h2>
-        <a href="" class="newsSection__viewAll">Zobacz wszystkie</a>
+        <a href="news.php" class="newsSection__viewAll">
+          <button class="button button--ghost">Zobacz wszystkie</button>
+        </a>
       </header>
       <div class="newsSection__wrapper">
         <div class="newsSection__mainArticle">
@@ -30,7 +32,7 @@
     <section class="programSection">
       <header class="programSection__header">
         <h2 class="programSection__title">Program festiwalu</h2>
-        <a href="" class="programSection__viewAll">Zobacz wszystkie</a>
+        <a href="program.php" class="programSection__viewAll">Zobacz wszystkie</a>
         <nav class="programSection__header__buttons">
           <button 
           class="programSection__header__button button--prev" 
@@ -50,7 +52,9 @@
     <section class="archivesSection">
       <header class="archivesSection__header">
         <h2 class="archivesSection__title">Archiwum</h2>
-        <a href="" class="archivesSection__viewAll">Zobacz wszystkie</a>
+        <a href="archive.php" class="archivesSection__viewAll">
+          <button class="button button--ghost">Zobacz wszystkie</button>
+        </a>
       </header>
       <article class="archivesSection__item">
         <span class="archivesSection__item__content">Ukraina</span>
