@@ -153,6 +153,7 @@
 .container .newsSection__title, .container .programSection__title, .container .archivesSection__title {
   font-size: 36px;
   font-weight: 900;
+  color: #161616;
 }
 
 .container .newsSection__viewAll, .container .programSection__viewAll, .container .archivesSection__viewAll {
@@ -307,19 +308,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 100vh;
-  padding: 96px 120px 120px 120px;
-  position: relative;
-}
-
-.container .archivesSection::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 96px;
-  background-color: #EBEBEB;
+  padding: 96px 120px;
 }
 
 .container .archivesSection__header {
@@ -351,4 +340,4 @@
   font-size: 14px;
   font-weight: 700;
 }
-/*# sourceMappingURL=HomePage.css.map */
+/*# sourceMappingURL=homePage.css.map */

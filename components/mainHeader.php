@@ -14,7 +14,7 @@
         </li>
         <li class="mainHeader__item">Idea</li>
         <li class="mainHeader__item">
-          <span class="mainHeader__item__title">Archiwum</span>
+          <a href="archive.php" class="mainHeader__item__title">Archiwum</a>
           <ul class="mainHeader__submenu">
             <li class="mainHeader__submenu__item">Edycja I: Blizny Historii 2007</li>
             <li class="mainHeader__submenu__item">Edycja II: Wykluczeni 2009</li>

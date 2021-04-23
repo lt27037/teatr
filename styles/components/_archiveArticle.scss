@@ -1,0 +1,29 @@
+@import '../variables';
+@import './primaryArticle';
+
+@import '../variables';
+
+.archiveArticle{
+  @extend .primaryArticle;
+  &__picture{
+    width: 224px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__container{
+    @extend .primaryArticle__container;
+  }
+  &__date{
+    @extend .primaryArticle__date;
+  }
+  &__title{
+    @extend .primaryArticle__title;
+  }
+  &__fragment{
+    @extend .primaryArticle__fragment;
+  }
+  &__button{
+    @extend .primaryArticle__button;
+  }
+}

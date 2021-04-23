@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="./images/favicon.ico"/>
-  <link rel="stylesheet" href="styles/index.css">
+  <?php @include './bodyElements/head.php' ?>
   <link rel="stylesheet" href="styles/homePage.css">
-  <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
   <title>Teatr Polski w Poznaniu | Strona główna</title>
 </head>
 <body>
