@@ -121,7 +121,7 @@
   .programSection{
     width: 100%;
     min-height: 100vh;
-    padding: 96px 120px 120px 120px;
+    padding: 96px 0 120px 120px;
     background-color: $darkBgc-100;
     margin-top: 144px;
     position: relative;
@@ -148,12 +148,37 @@
     }
     &__header{
       @extend .newsSection__header;
+      justify-content: stretch;
+      padding: 0 120px 48px 0px;
+      &__buttons{
+        @include elementFlex(row, center, center);
+      }
+      &__button{
+        width: 24px;
+        height: 24px;
+        border-style: none;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      .button--next{
+        background: url('../images/arrow_forward.svg') no-repeat;
+        background-position: center;
+        margin-left: 12px;
+      }
+      .button--prev{
+        background: url('../images/arrow_back.svg') no-repeat;
+        background-position: center;
+        margin-right: 12px;
+      }
     }
     &__title{
       @extend .newsSection__title;
+      flex-grow: 1;
     }
     &__viewAll{
       @extend .newsSection__viewAll;
+      margin-right: 36px;
     }
   }
   .archivesSection{

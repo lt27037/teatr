@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" href="./images/favicon.ico"/>
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/homePage.css">
+  <link rel="stylesheet" href="./owl/owl.carousel.min.css" />
   <title>Teatr Polski w Poznaniu | Strona główna</title>
 </head>
 <body>
@@ -35,8 +36,21 @@
       <header class="programSection__header">
         <h2 class="programSection__title">Program festiwalu</h2>
         <a href="" class="programSection__viewAll">Zobacz wszystkie</a>
+        <nav class="programSection__header__buttons">
+          <button 
+          class="programSection__header__button button--prev" 
+          onClick={handlePrev()}>
+          </button>
+          <button class="programSection__header__button button--next"
+          onClick={handleNext()}>
+          </button>
+        </nav>
       </header>
-      <?php @include './components/secondaryEvent.php' ?>
+      <div class="owl-carousel owl-theme">
+        <?php @include './components/secondaryEvent.php' ?>
+        <?php @include './components/secondaryEvent.php' ?>
+        <?php @include './components/secondaryEvent.php' ?>
+      </div>
     </section>
     <section class="archivesSection">
       <header class="archivesSection__header">
@@ -62,5 +76,34 @@
     </section>
   </main>
   <?php @include './components/footer.php' ?>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2.3
+            }
+        }
+      })
+    });
+
+    const handleNext = () => document.querySelector('.owl-next').click();
+    const handlePrev = () => document.querySelector('.owl-prev').click();
+
+  </script>
 </body>
 </html>

@@ -202,7 +202,7 @@
 .container .programSection {
   width: 100%;
   min-height: 100vh;
-  padding: 96px 120px 120px 120px;
+  padding: 96px 0 120px 120px;
   background-color: #161616;
   margin-top: 144px;
   position: relative;
@@ -231,6 +231,60 @@
   background: #161616;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.container .programSection__header {
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  padding: 0 120px 48px 0px;
+}
+
+.container .programSection__header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .programSection__header__button {
+  width: 24px;
+  height: 24px;
+  border-style: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.container .programSection__header .button--next {
+  background: url("../images/arrow_forward.svg") no-repeat;
+  background-position: center;
+  margin-left: 12px;
+}
+
+.container .programSection__header .button--prev {
+  background: url("../images/arrow_back.svg") no-repeat;
+  background-position: center;
+  margin-right: 12px;
+}
+
+.container .programSection__title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .programSection__viewAll {
+  margin-right: 36px;
 }
 
 .container .archivesSection {
@@ -292,4 +346,4 @@
   font-size: 14px;
   font-weight: 700;
 }
-/*# sourceMappingURL=homePage.css.map */
+/*# sourceMappingURL=HomePage.css.map */
