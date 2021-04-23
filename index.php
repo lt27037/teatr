@@ -58,19 +58,19 @@
         </a>
       </header>
       <article class="archivesSection__item">
-        <span class="archivesSection__item__content">Ukraina</span>
+        <span class="archivesSection__item__content content--title">Ukraina</span>
         <span class="archivesSection__item__content">2019</span>
       </article>
       <article class="archivesSection__item">
-        <span class="archivesSection__item__content">Polska</span>
+        <span class="archivesSection__item__content content--title">Polska</span>
         <span class="archivesSection__item__content">2018</span>
       </article>
       <article class="archivesSection__item">
-        <span class="archivesSection__item__content">One</span>
+        <span class="archivesSection__item__content content--title">One</span>
         <span class="archivesSection__item__content">2015</span>
       </article>
       <article class="archivesSection__item">
-        <span class="archivesSection__item__content">Kain i Abel</span>
+        <span class="archivesSection__item__content content--title">Kain i Abel</span>
         <span class="archivesSection__item__content">2014</span>
       </article>
     </section>
@@ -120,7 +120,7 @@
       opacity: 1,
       duration: 0.2,
     });
-    
+
   </script>
 </body>
 </html>
