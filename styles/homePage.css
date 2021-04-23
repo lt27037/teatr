@@ -209,6 +209,11 @@
   color: #F5F5F5;
 }
 
+.container .programSection .owl-prev,
+.container .programSection .owl-next {
+  visibility: hidden;
+}
+
 .container .programSection::after {
   content: '';
   width: 100%;

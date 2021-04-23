@@ -126,6 +126,10 @@
     margin-top: 144px;
     position: relative;
     color: $lightFont-100;
+    .owl-prev,
+    .owl-next{
+      visibility: hidden;
+    }
     &::after{
       content: '';
       width: 100%;
