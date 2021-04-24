@@ -92,10 +92,10 @@
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:1.15
             },
             600:{
-                items:1
+                items:1.6
             },
             1000:{
                 items:2.2
@@ -107,19 +107,21 @@
     const handleNext = () => document.querySelector('.owl-next').click();
     const handlePrev = () => document.querySelector('.owl-prev').click();
 
-    gsap.fromTo('.mainHeader__list', {
-      visibility: 'hidden',
-      opacity: 0
-    }, {
-      visibility: 'visible',
-      scrollTrigger: {
-        trigger: '.topSection',
-        start: 'top top',
-        scrub: true,
-      },
-      opacity: 1,
-      duration: 0.2,
-    });
+    if(window.innerWidth > 786){
+      gsap.fromTo('.mainHeader__list', {
+        visibility: 'hidden',
+        opacity: 0
+        }, {
+        visibility: 'visible',
+        scrollTrigger: {
+          trigger: '.topSection',
+          start: 'top top',
+          scrub: true,
+        },
+        opacity: 1,
+        duration: 0.2,
+      });
+    }
 
   </script>
 </body>

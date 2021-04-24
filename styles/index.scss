@@ -22,5 +22,6 @@ body{
 @media(max-width: 786px){
   body{
     overflow-x: hidden;
+    grid-template-rows: 112px 1fr auto;
   }
 }

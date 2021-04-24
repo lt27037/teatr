@@ -180,15 +180,18 @@
       }
     }
     &__submenu{
+      @include elementFlex(column, flex-start, flex-start);
+      transform: translateY(0);
       position: fixed;
       width: 100vw;
       height: 100vh;
       background-color: $darkBgc-100;
-      top: 0%;
+      bottom: initial;
+      top: 0;
       left: 100%;
-      @include elementFlex(column, flex-start, flex-start);
       padding: 218px 10px 0 10px;
       transition: transform .3s ease-in-out;
+      z-index: 998;
       &.menu--active{
         transform: translateX(-100%);
       }
