@@ -9,9 +9,13 @@
   padding: 0 45px 0 120px;
   flex-grow: 1;
   color: $lightFont-100;
+  &__mobileButton{
+    display: none;
+  }
   .logo{
     path{
       fill: $lightBgc-100;
+      transition: fill .3s ease;
     }
   }
   &__language{
@@ -125,6 +129,137 @@
     .mainHeader__item__title{
       &::after{
         background-image: url(../images/small-arrow-black.svg);
+      }
+    }
+  }
+}
+
+@media(max-width: 786px){
+  .mainHeader{
+    // justify-content: stretch;
+    padding: 0 16px;
+    .logo__wrapper{
+      flex-grow: 1;
+      z-index: 999;
+    }
+    .logo.menu--active{
+      path{
+        fill: $darkBgc-100;
+        z-index: 999;
+      }
+    }
+    &__wrapper{
+      .button{
+        display: none;
+      }
+    }
+    &__nav{
+      @include elementFlex(column, flex-start, flex-start);
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      padding: 218px 10px 0 10px;
+      left: 100%;
+      top: 0;
+      background-color: $mainYellow;
+      transition: transform .3s ease-in-out;
+    }
+    &__nav.menu--active{
+      transform: translateX(-100%);
+    }
+    &__list{
+      @include elementFlex(column, flex-start, flex-start);
+      height: auto;
+      color: $darkFont-100;
+      width: 100%;
+    }
+    &__item{
+      width: 100%;
+      a{
+        color: $darkFont-100;
+      }
+    }
+    &__submenu{
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: $darkBgc-100;
+      top: 0%;
+      left: 100%;
+      @include elementFlex(column, flex-start, flex-start);
+      padding: 218px 10px 0 10px;
+      transition: transform .3s ease-in-out;
+      &.menu--active{
+        transform: translateX(-100%);
+      }
+      a{
+        color: $lightFont-100;
+      }
+    }
+    &__mobileButton{
+      @include elementFlex(row, center, center);
+      margin-left: 48px;
+      width: 34px;
+      height: 34px;
+      padding: 5px;
+      background: transparent;
+      border: none;
+      &__content{
+        width: 24px;
+        height: 2px;
+        background: $lightBgc-100;
+        position: relative;
+        transition: transform .2s, background .2s;
+        opacity: 1;
+        &::after,
+        &::before{
+          content: '';
+          width: 24px;
+          height: 2px;
+          background: $lightBgc-100;
+          position: absolute;
+          transition: transform .2s, background .2s;
+        }
+        &::after{
+          top: -8px;
+          left: 0;
+        }
+        &::before{
+          bottom: -8px;
+          left: 0;
+        }
+      }
+    }
+    &__mobileButton.menu--active{
+      .mainHeader__mobileButton__content{
+        background: transparent;
+        &::after{
+          top: -8px;
+          left: 0;
+          transform: translateX(8px) rotateZ(45deg) translateY(11px) ;
+          background: $darkBgc-100;
+        }
+        &::before{
+          bottom: -8px;
+          left: 0;
+          transform: translateX(8px) rotateZ(-45deg) translateY(-11px) ;
+          background: $darkBgc-100;
+        }
+      }
+    }
+    &__item:hover{
+      background: inherit;
+      a{
+        color: $darkFont-100;
+      }
+      .mainHeader__submenu{
+        display: inherit;
+        color: inherit;
+      }
+    }
+    .mainHeader__item__title{
+      &::after{
+        background-image: inherit;
       }
     }
   }

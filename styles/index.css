@@ -32,8 +32,14 @@
   color: #F5F5F5;
 }
 
+.mainHeader__mobileButton {
+  display: none;
+}
+
 .mainHeader .logo path {
   fill: #F5F5F5;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
 }
 
 .mainHeader__language {
@@ -221,6 +227,193 @@
 
 .mainHeader__item:hover .mainHeader__item__title::after {
   background-image: url(../images/small-arrow-black.svg);
+}
+
+@media (max-width: 786px) {
+  .mainHeader {
+    padding: 0 16px;
+  }
+  .mainHeader .logo__wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    z-index: 999;
+  }
+  .mainHeader .logo.menu--active path {
+    fill: #161616;
+    z-index: 999;
+  }
+  .mainHeader__wrapper .button {
+    display: none;
+  }
+  .mainHeader__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 218px 10px 0 10px;
+    left: 100%;
+    top: 0;
+    background-color: #FFCD4C;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .mainHeader__nav.menu--active {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .mainHeader__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: auto;
+    color: #161616;
+    width: 100%;
+  }
+  .mainHeader__item {
+    width: 100%;
+  }
+  .mainHeader__item a {
+    color: #161616;
+  }
+  .mainHeader__submenu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #161616;
+    top: 0%;
+    left: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 218px 10px 0 10px;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .mainHeader__submenu.menu--active {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .mainHeader__submenu a {
+    color: #F5F5F5;
+  }
+  .mainHeader__mobileButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 48px;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+  }
+  .mainHeader__mobileButton__content {
+    width: 24px;
+    height: 2px;
+    background: #F5F5F5;
+    position: relative;
+    -webkit-transition: background .2s, -webkit-transform .2s;
+    transition: background .2s, -webkit-transform .2s;
+    transition: transform .2s, background .2s;
+    transition: transform .2s, background .2s, -webkit-transform .2s;
+    opacity: 1;
+  }
+  .mainHeader__mobileButton__content::after, .mainHeader__mobileButton__content::before {
+    content: '';
+    width: 24px;
+    height: 2px;
+    background: #F5F5F5;
+    position: absolute;
+    -webkit-transition: background .2s, -webkit-transform .2s;
+    transition: background .2s, -webkit-transform .2s;
+    transition: transform .2s, background .2s;
+    transition: transform .2s, background .2s, -webkit-transform .2s;
+  }
+  .mainHeader__mobileButton__content::after {
+    top: -8px;
+    left: 0;
+  }
+  .mainHeader__mobileButton__content::before {
+    bottom: -8px;
+    left: 0;
+  }
+  .mainHeader__mobileButton.menu--active .mainHeader__mobileButton__content {
+    background: transparent;
+  }
+  .mainHeader__mobileButton.menu--active .mainHeader__mobileButton__content::after {
+    top: -8px;
+    left: 0;
+    -webkit-transform: translateX(8px) rotateZ(45deg) translateY(11px);
+            transform: translateX(8px) rotateZ(45deg) translateY(11px);
+    background: #161616;
+  }
+  .mainHeader__mobileButton.menu--active .mainHeader__mobileButton__content::before {
+    bottom: -8px;
+    left: 0;
+    -webkit-transform: translateX(8px) rotateZ(-45deg) translateY(-11px);
+            transform: translateX(8px) rotateZ(-45deg) translateY(-11px);
+    background: #161616;
+  }
+  .mainHeader__item:hover {
+    background: inherit;
+  }
+  .mainHeader__item:hover a {
+    color: #161616;
+  }
+  .mainHeader__item:hover .mainHeader__submenu {
+    display: inherit;
+    color: inherit;
+  }
+  .mainHeader .mainHeader__item__title::after {
+    background-image: inherit;
+  }
 }
 
 .footer {
@@ -421,6 +614,12 @@
 
 .footer__toTop .footer__link::after {
   background: url("../images/top-arrow.svg") no-repeat;
+}
+
+@media (max-width: 786px) {
+  .footer {
+    overflow-x: hidden;
+  }
 }
 
 .button {
@@ -791,5 +990,11 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
+}
+
+@media (max-width: 786px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=index.css.map */

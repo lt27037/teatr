@@ -29,6 +29,7 @@
     <span class="footer__link">na górę</span>
   </div>
 </footer>
+<script src="./scripts/mobileMenu.js"></script>
 <script>
   const handleToTop = () => window.scrollTo(0, 0);
 </script>

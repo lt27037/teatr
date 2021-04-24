@@ -3,9 +3,9 @@
     <?php @include 'logo.php'; ?>
     <nav class="mainHeader__nav">
       <ul class="mainHeader__list">
-        <li class="mainHeader__item">
-          <a href="news.php" class="mainHeader__item__title">Festiwal</a>
-          <ul class="mainHeader__submenu">
+        <li class="mainHeader__item item--festival">
+          <a class="mainHeader__item__title">Festiwal</a>
+          <ul class="mainHeader__submenu submenu--festival">
             <a href="news.php"><li class="mainHeader__submenu__item">Aktualności</li></a>
             <a href="organizer.php"><li class="mainHeader__submenu__item">Organizatorzy</li></a>
             <a href="crew.php"><li class="mainHeader__submenu__item">Zespół festiwalu</li></a>
@@ -13,9 +13,9 @@
           </ul>
         </li>
         <li class="mainHeader__item"><a href="idea.php">Idea</a></li>
-        <li class="mainHeader__item">
-          <a href="archive.php" class="mainHeader__item__title">Archiwum</a>
-          <ul class="mainHeader__submenu">
+        <li class="mainHeader__item item--archive">
+          <a class="mainHeader__item__title">Archiwum</a>
+          <ul class="mainHeader__submenu submenu--archive">
             <a href="archive.php"><li class="mainHeader__submenu__item">Edycja I: Blizny Historii 2007</li></a>
             <a href="archive.php"><li class="mainHeader__submenu__item">Edycja II: Wykluczeni 2009</li></a>
             <a href="archive.php"><li class="mainHeader__submenu__item">Edycja III: Święta rodzina 2010</li></a>
@@ -33,6 +33,9 @@
       </ul>
     </nav>
     <button class="mainHeader__language">PL</button>
+    <button class="mainHeader__mobileButton">
+      <span class="mainHeader__mobileButton__content"></span>
+    </button>
   </header>
   <button class="button button--primary">
     Bilety

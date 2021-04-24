@@ -1,4 +1,8 @@
 .logo{
   width: 40px;
   height: 80px;
+  transition: fill .2s;
+  path{
+    transition: fill .4s ease;
+  }
 }
