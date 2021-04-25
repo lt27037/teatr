@@ -167,7 +167,8 @@
 .container__years__item {
   font-size: 16px;
   font-weight: 500;
-  margin-right: 36px;
+  line-height: 24px;
+  color: #161616;
 }
 
 .container__years__link {

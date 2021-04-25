@@ -20,9 +20,7 @@
       list-style: none;
     }
     &__item{
-      font-size: 16px;
-      font-weight: 500;
-      margin-right: 36px;
+      @include font500($darkFont-100);
     }
     &__link{
       text-decoration: none;
