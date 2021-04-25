@@ -51,3 +51,19 @@
     }
   }
 }
+
+@media(max-width:786px){
+  .container{
+    &__header{
+      padding: 0 16px;
+    }
+    .bioSection{
+      padding: 48px 16px;
+      &__element{
+        grid-template-columns: 100%;
+        row-gap: 48px;
+        column-gap: initial;
+      }
+    }
+  }
+}

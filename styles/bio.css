@@ -102,4 +102,20 @@
 .container .bioSection:last-child {
   padding-bottom: 0px;
 }
+
+@media (max-width: 786px) {
+  .container__header {
+    padding: 0 16px;
+  }
+  .container .bioSection {
+    padding: 48px 16px;
+  }
+  .container .bioSection__element {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    row-gap: 48px;
+    -webkit-column-gap: initial;
+            column-gap: initial;
+  }
+}
 /*# sourceMappingURL=bio.css.map */
