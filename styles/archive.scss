@@ -52,3 +52,30 @@
     }
   }
 }
+
+@media(max-width: 786px){
+  .container{
+    padding: 72px 16px 150px 16px;
+    width: auto;
+    overflow-x: hidden;
+    &__years{
+      overflow-x: scroll;
+      padding: 16px 0;
+      width: 100%;
+    }
+    .category{
+      @include elementFlex(column, flex-start, flex-start);
+      width: 100%;
+      margin-top: 96px;
+      &__title{
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 45px;
+      }
+      &__wrapper{
+        width: 100%;
+        @include elementFlex(column, flex-start, flex-start);
+      }
+    }
+  }
+}

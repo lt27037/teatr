@@ -27,3 +27,14 @@
     @extend .primaryArticle__button;
   }
 }
+
+@media(max-width: 786px){
+  .archiveArticle{
+    &__picture{
+      width: 100%;
+      height: 224px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
