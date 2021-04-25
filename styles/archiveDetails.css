@@ -191,4 +191,43 @@
           transform: translateY(-50%);
   background-image: url("../images/arrow_forward-blue.svg");
 }
+
+@media (max-width: 786px) {
+  .container {
+    padding: 96px 16px 48px 16px;
+  }
+  .container .details {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-column-gap: initial;
+            column-gap: initial;
+    row-gap: 48px;
+  }
+  .container .details__nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .container .details__nav__button {
+    width: 100%;
+    padding: 0;
+  }
+  .container .details__nav__button.button--prev {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .details__nav__button.button--prev::after {
+    left: 16px;
+  }
+  .container .details__nav__button.button--next {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .details__nav__button.button--next::after {
+    right: 16px;
+  }
+}
 /*# sourceMappingURL=archiveDetails.css.map */
