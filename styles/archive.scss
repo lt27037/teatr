@@ -20,7 +20,10 @@
       list-style: none;
     }
     &__item{
-      @include font500($darkFont-100);
+      font-size: 16px;
+      font-weight: 500;
+      color: $darkFont-100;
+      margin-right: 36px;
     }
     &__link{
       text-decoration: none;
@@ -60,6 +63,10 @@
       overflow-x: scroll;
       padding: 16px 0;
       width: 100%;
+      &__item{
+        width: 200px;
+        margin: 0 36px 0 0;
+      }
     }
     .category{
       @include elementFlex(column, flex-start, flex-start);
