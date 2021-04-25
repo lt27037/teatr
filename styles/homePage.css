@@ -446,8 +446,16 @@
     display: inherit;
     color: inherit;
   }
-  .mainHeader .mainHeader__item__title::after {
-    background-image: inherit;
+  .mainHeader__item__title::after {
+    background-image: url(../images/small-arrow-black.svg);
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotateZ(-90deg);
+            transform: translateY(-50%) rotateZ(-90deg);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: initial;
+    margin-left: 10px;
   }
 }
 
