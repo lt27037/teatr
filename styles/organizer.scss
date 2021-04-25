@@ -59,3 +59,15 @@
     }
   }
 }
+
+@media(max-width: 786px){
+  .container{
+    padding: 72px 16px 0 16px;
+    .organizer{
+      @include elementFlex(column, flex-start, flex-start);
+      &__logo{
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

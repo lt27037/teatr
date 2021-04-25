@@ -28,3 +28,20 @@
     }
   }
 }
+
+@media(max-width: 786px){
+  .container{
+    padding: 96px 16px 0 16px;
+    .partnersSection{
+      width: 100%;
+      margin-bottom: 96px;
+      &__wrapper{
+        @include elementFlex(column, flex-start, flex-start);
+        flex-wrap: initial;
+      }
+      &__logo{
+        margin: 0 0 48px 0;
+      }
+    }
+  }
+}

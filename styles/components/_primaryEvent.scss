@@ -46,3 +46,18 @@
     margin-top: 36px;
   }
 }
+
+@media(max-width: 786px){
+  .primaryEvent{
+    height: auto;
+    max-width: none;
+    margin-bottom: 36px;
+    &__container{
+      padding: 24px 0 0 0;
+      width: 100%;
+    }
+    &__wrapper{
+      @include elementFlex(column, flex-start, flex-start);
+    }
+  }
+}
