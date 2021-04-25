@@ -144,4 +144,28 @@
   color: #7A7A7A;
   margin-top: 12px;
 }
+
+@media (max-width: 786px) {
+  .container {
+    padding: 96px 16px 48px 16px;
+  }
+  .container .ideaSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-column-gap: initial;
+            column-gap: initial;
+    row-gap: 48px;
+  }
+  .container .ideaSection__title {
+    grid-column: initial;
+  }
+  .container .ideaSection__leftBar {
+    grid-column: initial;
+  }
+  .container .ideaSection__rightBar {
+    grid-column: initial;
+  }
+}
 /*# sourceMappingURL=idea.css.map */

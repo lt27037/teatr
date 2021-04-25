@@ -43,3 +43,15 @@
     }
   }
 }
+
+@media (max-width: 786px){
+  .container{
+    padding: 72px 16px 48px 16px;
+    .crew{
+      grid-template-columns: 100%;
+      &__rightBar{
+        display: none;
+      }
+    }
+  }
+}

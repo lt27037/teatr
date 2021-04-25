@@ -107,4 +107,17 @@
   line-height: 24px;
   font-weight: 500;
 }
+
+@media (max-width: 786px) {
+  .container {
+    padding: 72px 16px 48px 16px;
+  }
+  .container .crew {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .container .crew__rightBar {
+    display: none;
+  }
+}
 /*# sourceMappingURL=crew.css.map */

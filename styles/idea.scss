@@ -56,3 +56,24 @@
     }
   }
 }
+
+@media(max-width: 786px){
+  .container{
+    padding: 96px 16px 48px 16px;
+    .ideaSection{
+      display: grid;
+      grid-template-columns: 100%;
+      column-gap: initial;
+      row-gap: 48px;
+      &__title{
+        grid-column: initial;
+      }
+      &__leftBar{
+        grid-column: initial;
+      }
+      &__rightBar{
+        grid-column: initial;
+      }
+    }
+  }
+}
