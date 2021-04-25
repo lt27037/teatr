@@ -108,4 +108,21 @@
 .footer__data, .footer__title {
   display: none;
 }
+
+@media (max-width: 786px) {
+  .container {
+    padding: 96px 16px 48px 16px;
+  }
+  .container .contact {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    row-gap: 36px;
+  }
+  .footer__leftBar {
+    display: none;
+  }
+  .footer__rightBar {
+    height: 700px;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

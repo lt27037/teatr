@@ -35,6 +35,7 @@
       </div>
     </section>
   </main>
+  <script src="./scripts/mobileMap.js"></script>
   <?php @include './components/footer.php' ?>
 </body>
 </html>
