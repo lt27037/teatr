@@ -117,6 +117,7 @@
 @media (max-width: 786px) {
   .container {
     padding: 72px 16px 0 16px;
+    overflow-x: hidden;
   }
   .container .organizer {
     display: -webkit-box;
@@ -132,6 +133,9 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .container .organizer__list {
+    width: calc(100% - 24px);
   }
   .container .organizer__logo {
     margin-bottom: 48px;

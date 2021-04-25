@@ -63,8 +63,12 @@
 @media(max-width: 786px){
   .container{
     padding: 72px 16px 0 16px;
+    overflow-x: hidden;
     .organizer{
       @include elementFlex(column, flex-start, flex-start);
+      &__list{
+        width: calc(100% - 24px);
+      }
       &__logo{
         margin-bottom: 48px;
       }
