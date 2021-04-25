@@ -11,6 +11,7 @@
     <section class="topSection">
       <?php @include './components/homePageMenu.php' ?>
       <img src="./images/topSection-baner.png" alt="Baner" class="topSection__banner">
+      <img src="./images/pointer.svg" alt="pointer icon" class="topSection__mobileIcon">
     </section>
     <section class="newsSection">
       <header class="newsSection__header">

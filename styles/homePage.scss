@@ -12,6 +12,9 @@
     background-position: center;
     background-color: $lightBgc-90;
     position: relative;
+    &__mobileIcon{
+      display: none;
+    }
     &::after{
       content: '';
       width: 120px;
@@ -212,6 +215,14 @@
       width: calc(100% - 16px);
       margin: 0 16px 0 0;
       padding: 104px 0 0 16px;
+      &__mobileIcon{
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 16px;
+        bottom: 24px;
+      }
       &::before{
         content: '';
         height: 100%;

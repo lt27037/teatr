@@ -463,6 +463,17 @@
   padding: 84px 0 0 96px;
 }
 
+.homePageMenu__nav::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url(../images/mouse.svg) no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 120px;
+  bottom: 24px;
+}
+
 .homePageMenu__list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -596,6 +607,10 @@
   background-position: center;
   background-color: #EBEBEB;
   position: relative;
+}
+
+.container .topSection__mobileIcon {
+  display: none;
 }
 
 .container .topSection::after {
@@ -906,6 +921,14 @@
     width: calc(100% - 16px);
     margin: 0 16px 0 0;
     padding: 104px 0 0 16px;
+  }
+  .container .topSection__mobileIcon {
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    bottom: 24px;
   }
   .container .topSection::before {
     content: '';

@@ -12,6 +12,16 @@
     width: 324px;
     height: calc(100vh - 112px);
     padding: 84px 0 0 96px;
+    &::after{
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url(../images/mouse.svg) no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 120px;
+      bottom: 24px;
+    }
   }
   &__list{
     @extend .mainHeader__list;
