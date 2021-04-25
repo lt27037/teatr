@@ -229,6 +229,10 @@
   background-image: url(../images/small-arrow-black.svg);
 }
 
+.mainHeader__mobileTicket {
+  display: none;
+}
+
 @media (max-width: 786px) {
   .mainHeader {
     padding: 0 16px;
@@ -241,6 +245,10 @@
   }
   .mainHeader .logo.menu--active path {
     fill: #161616;
+    z-index: 999;
+  }
+  .mainHeader .logo.menu--active.submenu--active path {
+    fill: #F5F5F5;
     z-index: 999;
   }
   .mainHeader__wrapper .button {
@@ -294,11 +302,26 @@
     color: #161616;
     width: 100%;
   }
+  .mainHeader__mobileTicket {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #161616;
+    font-size: 16px;
+    font-family: 'Exo', sans-serif;
+    display: block;
+    position: absolute;
+    bottom: 72px;
+    left: 22px;
+  }
   .mainHeader__item {
     width: 100%;
+    height: auto;
+    padding: 0;
   }
   .mainHeader__item a {
     color: #161616;
+    padding: 18px;
   }
   .mainHeader__submenu {
     display: -webkit-box;
@@ -330,12 +353,25 @@
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     z-index: 998;
   }
-  .mainHeader__submenu.menu--active {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+  .mainHeader__submenu::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 72px;
+    right: 16px;
+    background: url("../images/arrow_back-white.svg") no-repeat;
+    background-position: center;
+    z-index: 999;
   }
   .mainHeader__submenu a {
     color: #F5F5F5;
+    height: auto;
+    padding: 0;
+  }
+  .mainHeader__submenu.submenu--active {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   .mainHeader__mobileButton {
     display: -webkit-box;
@@ -404,6 +440,10 @@
     -webkit-transform: translateX(8px) rotateZ(-45deg) translateY(-11px);
             transform: translateX(8px) rotateZ(-45deg) translateY(-11px);
     background: #161616;
+  }
+  .mainHeader__mobileButton.menu--active.submenu--active .mainHeader__mobileButton__content::after,
+  .mainHeader__mobileButton.menu--active.submenu--active .mainHeader__mobileButton__content::before {
+    background: #F5F5F5;
   }
   .mainHeader__item:hover {
     background: inherit;

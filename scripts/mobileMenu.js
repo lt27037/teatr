@@ -12,15 +12,22 @@ mobileButton.addEventListener("click", () => {
   mobileButton.classList.toggle("menu--active");
   menuBody.classList.toggle("menu--active");
   logo.classList.toggle("menu--active");
+  mobileButton.classList.remove("submenu--active");
+  logo.classList.remove("submenu--active");
+  archiveSubmenu?.classList.remove("submenu--active");
+  festivalSubmenu?.classList.remove("submenu--active");
 });
 
 if (window.innerWidth < 786) {
   festivalButton?.addEventListener("click", (e) => {
-    festivalSubmenu?.classList.toggle("menu--active");
+    festivalSubmenu?.classList.toggle("submenu--active");
+    mobileButton.classList.add("submenu--active");
+    logo.classList.add("submenu--active");
   });
+
   archiveButton?.addEventListener("click", (e) => {
-    archiveSubmenu?.classList.toggle("menu--active");
+    archiveSubmenu?.classList.toggle("submenu--active");
+    mobileButton.classList.add("submenu--active");
+    logo.classList.add("submenu--active");
   });
 }
-
-console.log(window.innerWidth);

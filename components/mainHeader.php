@@ -31,6 +31,7 @@
         <li class="mainHeader__item"><a href="partners.php">Partnerzy festiwalu</a></li>
         <li class="mainHeader__item"><a href="contact.php">Kontakt</a></li>
       </ul>
+      <a class="mainHeader__mobileTicket">Bilety</a>
     </nav>
     <button class="mainHeader__language">PL</button>
     <button class="mainHeader__mobileButton">

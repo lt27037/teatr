@@ -132,6 +132,9 @@
       }
     }
   }
+  &__mobileTicket{
+    display: none;
+  }
 }
 
 @media(max-width: 786px){
@@ -145,6 +148,12 @@
     .logo.menu--active{
       path{
         fill: $darkBgc-100;
+        z-index: 999;
+      }
+    }
+    .logo.menu--active.submenu--active{
+      path{
+        fill: $lightBgc-100;
         z-index: 999;
       }
     }
@@ -173,14 +182,26 @@
       color: $darkFont-100;
       width: 100%;
     }
+    &__mobileTicket{
+      @include font900($darkBgc-100);
+      font-size: 16px;
+      font-family: 'Exo', sans-serif;
+      display: block;
+      position: absolute;
+      bottom: 72px;
+      left: 22px;
+    }
     &__item{
       width: 100%;
+      height: auto;
+      padding: 0;
       a{
         color: $darkFont-100;
+        padding: 18px;
       }
     }
     &__submenu{
-      @include elementFlex(column, flex-start, flex-start);
+      @include elementFlex(column, flex-start, flex-start); 
       transform: translateY(0);
       position: fixed;
       width: 100vw;
@@ -192,12 +213,25 @@
       padding: 218px 10px 0 10px;
       transition: transform .3s ease-in-out;
       z-index: 998;
-      &.menu--active{
-        transform: translateX(-100%);
+      &::after{
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        bottom: 72px;
+        right: 16px;
+        background: url('../images/arrow_back-white.svg') no-repeat;
+        background-position: center;
+        z-index: 999;
       }
       a{
         color: $lightFont-100;
+        height: auto;
+        padding: 0;
       }
+    }
+    &__submenu.submenu--active{
+        transform: translateX(-100%); 
     }
     &__mobileButton{
       @include elementFlex(row, center, center);
@@ -248,6 +282,12 @@
           transform: translateX(8px) rotateZ(-45deg) translateY(-11px) ;
           background: $darkBgc-100;
         }
+      }
+    }
+    &__mobileButton.menu--active.submenu--active{
+      .mainHeader__mobileButton__content::after,
+      .mainHeader__mobileButton__content::before{
+        background: $lightBgc-100;
       }
     }
     &__item:hover{
