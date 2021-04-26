@@ -31,5 +31,9 @@
 </footer>
 <script src="./scripts/mobileMenu.js"></script>
 <script>
-  const handleToTop = () => window.scrollTo(0, 0);
+  const handleToTop = () => window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth',
+  })
 </script>

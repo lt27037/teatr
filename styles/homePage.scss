@@ -214,6 +214,9 @@
 }
 
 @media(max-width: 786px){
+  .mainHeader__list{
+    opacity: 1;
+  }
   .container{
     overflow-x: hidden;
     .topSection{
