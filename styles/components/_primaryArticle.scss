@@ -38,7 +38,11 @@
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-    @include arrowAnimate;
+    transition: transform .3s ease-in-out, width .2s;
+    &:hover{
+      transform: translateX(10px);
+      width: 40px;
+    }
   }
 }
 
@@ -55,6 +59,10 @@
     }
     &__container{
       padding: 24px 0;
+    }
+    &__button:hover{
+      transform: translateX(0);
+      width: 24px;
     }
   }
 }

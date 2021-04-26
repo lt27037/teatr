@@ -899,6 +899,11 @@
   .primaryArticle__container, .secondaryEvent__container {
     padding: 24px 0;
   }
+  .primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 24px;
+  }
 }
 
 .primaryArticle {
@@ -1000,6 +1005,11 @@
   }
   .primaryArticle__container, .secondaryEvent__container {
     padding: 24px 0;
+  }
+  .primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 24px;
   }
 }
 
@@ -1119,6 +1129,11 @@
   }
   .primaryArticle__container, .secondaryEvent__container {
     padding: 24px 0;
+  }
+  .primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 24px;
   }
 }
 

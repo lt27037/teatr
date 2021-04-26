@@ -98,6 +98,11 @@
   .primaryArticle__container, .secondaryEvent__container, .primaryEvent__container {
     padding: 24px 0;
   }
+  .primaryArticle__button:hover, .secondaryEvent__button:hover, .primaryEvent__button:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 24px;
+  }
 }
 
 .secondaryEvent, .primaryEvent {
