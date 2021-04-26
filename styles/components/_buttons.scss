@@ -6,6 +6,7 @@
   font-weight: 900;
   border: none;
   font-family: 'Exo', sans-serif;
+  cursor: pointer;
   &.button--primary{
     background: $colorPrimary-100;
     color: $lightFont-100;

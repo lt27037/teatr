@@ -50,6 +50,7 @@
   border: none;
   font-family: 'Exo', sans-serif;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .mainHeader__wrapper {
@@ -728,6 +729,7 @@
   font-weight: 900;
   border: none;
   font-family: 'Exo', sans-serif;
+  cursor: pointer;
 }
 
 .button.button--primary {
@@ -856,6 +858,16 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  -webkit-transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, width .2s;
+  transition: transform .3s ease-in-out, width .2s, -webkit-transform .3s ease-in-out;
+}
+
+.primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  width: 40px;
 }
 
 @media (max-width: 786px) {
@@ -948,6 +960,16 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  -webkit-transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, width .2s;
+  transition: transform .3s ease-in-out, width .2s, -webkit-transform .3s ease-in-out;
+}
+
+.primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  width: 40px;
 }
 
 @media (max-width: 786px) {
@@ -1057,6 +1079,16 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  -webkit-transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: width .2s, -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, width .2s;
+  transition: transform .3s ease-in-out, width .2s, -webkit-transform .3s ease-in-out;
+}
+
+.primaryArticle__button:hover, .secondaryArticle__button:hover, .secondaryEvent__button:hover {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  width: 40px;
 }
 
 @media (max-width: 786px) {

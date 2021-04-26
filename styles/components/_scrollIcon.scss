@@ -1,0 +1,51 @@
+@import '../variables';
+
+.scrollIcon{
+  @include elementFlex(column, center, center);
+  width: 26px;
+  height: 54px;
+  left: 120px;
+  bottom: 24px;
+  position: absolute;
+  #arrow-top{
+    animation: scrollArrow 2s infinite;
+    animation-delay: .2s;
+  }
+  #arrow-bottom{
+    animation: scrollArrow 2s infinite;
+  }
+  #scroll{
+    animation: scrollArrow 2s infinite;
+  }
+}
+
+@keyframes scrollArrow{
+  0%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  75%{
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollButton{
+  0%{
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+    transform: scaleY(-2px);
+  }
+  100%{
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+}
