@@ -2,6 +2,9 @@
 @import './components/homePageMenu';
 
 .container{
+  .mainHeader__list{
+    opacity: 0;
+  }
   @include defaultContainer;
   .topSection{
     @include elementFlex(row, center, center);

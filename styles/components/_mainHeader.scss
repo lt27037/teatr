@@ -181,6 +181,7 @@
       height: auto;
       color: $darkFont-100;
       width: 100%;
+      opacity: 1;
     }
     &__mobileTicket{
       @include font900($darkBgc-100);

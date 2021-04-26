@@ -24,7 +24,9 @@
     }
   }
   &__list{
-    @extend .mainHeader__list;
+    @include elementFlex(row, flex-start, center);
+    list-style: none;
+    height: 112px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

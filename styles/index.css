@@ -301,6 +301,7 @@
     height: auto;
     color: #161616;
     width: 100%;
+    opacity: 1;
   }
   .mainHeader__mobileTicket {
     font-size: 24px;
