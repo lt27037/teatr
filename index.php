@@ -118,7 +118,8 @@
         scrollTrigger: {
           trigger: '.topSection',
           start: 'top top',
-          scrub: true,
+          end: 'center top',
+          scrub: 0.2,
         },
         opacity: 1,
         duration: 0.2,

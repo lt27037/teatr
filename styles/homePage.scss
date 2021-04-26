@@ -1,10 +1,11 @@
 @import 'variables';
 @import './components/homePageMenu';
 
+.mainHeader__list{
+  opacity: 0;
+}
+
 .container{
-  .mainHeader__list{
-    opacity: 0;
-  }
   @include defaultContainer;
   .topSection{
     @include elementFlex(row, center, center);

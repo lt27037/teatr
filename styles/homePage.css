@@ -599,15 +599,15 @@
           transform: translateX(500%) translateY(-50%) rotateZ(-90deg);
 }
 
+.mainHeader__list {
+  opacity: 0;
+}
+
 .container {
   width: 100%;
   min-height: 100vh;
   -ms-grid-row: 2;
   grid-row: 2;
-}
-
-.container .mainHeader__list {
-  opacity: 0;
 }
 
 .container .topSection {
