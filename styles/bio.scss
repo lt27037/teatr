@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.bioContainer{
   @include defaultContainer;
   padding: 96px 0 0 0;
   @include elementFlex(column, flex-start, flex-start);
@@ -53,7 +53,7 @@
 }
 
 @media(max-width:786px){
-  .container{
+  .bioContainer{
     &__header{
       padding: 0 16px;
     }

@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/crew.css">
+  <!-- <link rel="stylesheet" href="./styles/crew.css"> -->
   <title>Teatr Polski w Poznaniu | Zespół</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
+  <main class="crewContainer">
     <section class="crew">
       <header class="crew__header">
         <h2 class="crew__title">Zespół festiwalu</h2>

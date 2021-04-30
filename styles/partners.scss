@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.partnersContainer{
   @include defaultContainer;
   @include elementFlex(column, flex-start, flex-start);
   padding: 96px 120px 0 120px;
@@ -30,7 +30,7 @@
 }
 
 @media(max-width: 786px){
-  .container{
+  .partnersContainer{
     padding: 96px 16px 0 16px;
     .partnersSection{
       width: 100%;

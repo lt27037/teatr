@@ -6,7 +6,7 @@
   opacity: 0;
 }
 
-.container{
+.homeContainer{
   @include defaultContainer;
   .topSection{
     @include elementFlex(row, center, center);
@@ -217,7 +217,7 @@
   .mainHeader__list{
     opacity: 1;
   }
-  .container{
+  .homeContainer{
     overflow-x: hidden;
     .topSection{
       align-items: flex-start;

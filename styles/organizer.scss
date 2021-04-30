@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.organizerContainer{
   @include defaultContainer;
   padding: 72px 120px 0 120px;
   &__header{
@@ -61,7 +61,7 @@
 }
 
 @media(max-width: 786px){
-  .container{
+  .organizerContainer{
     padding: 72px 16px 0 16px;
     overflow-x: hidden;
     .organizer{

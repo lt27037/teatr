@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/program.css">
+  <!-- <link rel="stylesheet" href="./styles/program.css"> -->
   <title>Teatr Polski w Poznaniu | Program Festiwalu</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Program Festiwalu</h2>
+  <main class="programContainer">
+    <header class="programContainer__header">
+      <h2 class="programContainer__title">Program Festiwalu</h2>
     </header>
-    <section class="container__wrapper">
+    <section class="programContainer__wrapper">
       <?php @include './components/primaryEvent.php' ?>
       <?php @include './components/primaryEvent.php' ?>
       <?php @include './components/primaryEvent.php' ?>

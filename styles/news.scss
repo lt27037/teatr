@@ -1,7 +1,7 @@
 @import 'variables';
 @import './components/primaryArticle';
 
-.container{
+.newsContainer{
   @include defaultContainer;
   padding: 96px 120px;
   &__header{
@@ -51,7 +51,7 @@
 }
 
 @media(max-width: 786px){
-  .container{
+  .newsContainer{
     padding: 96px 16px;
     &__wrapper{
       @include elementFlex(column, flex-start, flex-start);

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/bio.css">
+  <!-- <link rel="stylesheet" href="./styles/bio.css"> -->
   <title>Teatr Polski w Poznaniu | Biogramy</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Program Festiwalu</h2>
+  <main class="bioContainer">
+    <header class="bioContainer__header">
+      <h2 class="bioContainer__title">Program Festiwalu</h2>
     </header>
     <section class="bioSection">
       <h3 class="bioSection__title">Koincydencja</h3>

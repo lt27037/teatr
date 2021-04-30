@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/archiveDetails.css">
+  <!-- <link rel="stylesheet" href="./styles/archiveDetails.css"> -->
   <title>Teatr Polski w Poznaniu | Archiwum</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Jazda obowiązkowa</h2>
+  <main class="archiveDetailsContainer">
+    <header class="archiveDetailsContainer__header">
+      <h2 class="archiveDetailsContainer__title">Jazda obowiązkowa</h2>
     </header>
     <section class="details">
       <div class="details__leftBar">

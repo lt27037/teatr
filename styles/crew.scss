@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.crewContainer{
   @include defaultContainer;
   @include elementFlex(column, flex-start, center);
   padding: 72px 120px 48px 120px;
@@ -45,7 +45,7 @@
 }
 
 @media (max-width: 786px){
-  .container{
+  .crewContainer{
     padding: 72px 16px 48px 16px;
     .crew{
       grid-template-columns: 100%;

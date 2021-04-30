@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/news.css">
+  <!-- <link rel="stylesheet" href="./styles/news.css"> -->
   <title>Teatr Polski w Poznaniu | Aktualnie</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Aktualnie</h2>
+  <main class="newsContainer">
+    <header class="newsContainer__header">
+      <h2 class="newsContainer__title">Aktualnie</h2>
     </header>
-    <section class="container__wrapper">
-      <div class="container__wrapper__column">
+    <section class="newsContainer__wrapper">
+      <div class="newsContainer__wrapper__column">
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
       </div>
-      <div class="container__wrapper__column">
+      <div class="newsContainer__wrapper__column">
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>

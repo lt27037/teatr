@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.ideaContainer{
   @include defaultContainer;
   padding: 96px 120px 48px 120px;
   &__header{
@@ -58,7 +58,7 @@
 }
 
 @media(max-width: 786px){
-  .container{
+  .ideaContainer{
     padding: 96px 16px 48px 16px;
     .ideaSection{
       display: grid;

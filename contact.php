@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/contact.css">
+  <!-- <link rel="stylesheet" href="./styles/contact.css"> -->
   <title>Teatr Polski w Poznaniu | Kontakt</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Kontakt</h2>
+  <main class="contactContainer">
+    <header class="contactContainer__header">
+      <h2 class="contactContainer__title">Kontakt</h2>
     </header>
     <section class="contact">
       <div class="contact__wrapper">

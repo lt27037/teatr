@@ -1,7 +1,7 @@
 @import 'variables';
 @import './components/archiveArticle';
 
-.container{
+.archiveContainer{
   @include defaultContainer;
   padding: 72px 120px 150px 120px;
   &__header{

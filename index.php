@@ -7,7 +7,7 @@
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
+  <main class="homeContainer">
     <section class="topSection">
       <?php @include './components/homePageMenu.php' ?>
       <img src="./images/topSection-baner.png" alt="Baner" class="topSection__banner">

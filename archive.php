@@ -2,46 +2,46 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="styles/archive.css">
+  <!-- <link rel="stylesheet" href="styles/archive.css"> -->
   <title>Teate Polski w Poznaniu | Archiwum</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Archiwum</h2>
+  <main class="archiveContainer">
+    <header class="archiveContainer__header">
+      <h2 class="archiveContainer__title">Archiwum</h2>
     </header>
-    <nav class="container__years">
-      <ul class="container__years__list">
-        <li class="container__years__item item--active">
-          <a href="" class="container__years__link">2019</a>
+    <nav class="archiveContainer__years">
+      <ul class="archiveContainer__years__list">
+        <li class="archiveContainer__years__item item--active">
+          <a href="" class="archiveContainer__years__link">2019</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2018</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2018</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2015</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2015</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2014</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2014</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2013</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2013</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2012</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2012</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2011</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2011</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2010</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2010</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2009</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2009</a>
         </li>
-        <li class="container__years__item">
-          <a href="" class="container__years__link">2007</a>
+        <li class="archiveContainer__years__item">
+          <a href="" class="archiveContainer__years__link">2007</a>
         </li>
       </ul>
     </nav>

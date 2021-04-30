@@ -1,4 +1,4 @@
-.container {
+.bioContainer {
   width: 100%;
   min-height: 100vh;
   -ms-grid-row: 2;
@@ -19,7 +19,7 @@
           align-items: flex-start;
 }
 
-.container__header {
+.bioContainer__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,14 +37,14 @@
   padding: 0 120px;
 }
 
-.container__title {
+.bioContainer__title {
   font-size: 36px;
   font-weight: 900;
   color: #161616;
   margin-bottom: 48px;
 }
 
-.container .bioSection {
+.bioContainer .bioSection {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,14 +62,14 @@
   padding: 48px 120px;
 }
 
-.container .bioSection__title {
+.bioContainer .bioSection__title {
   font-weight: 900;
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 48px;
 }
 
-.container .bioSection__element {
+.bioContainer .bioSection__element {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -78,39 +78,39 @@
   padding-bottom: 96px;
 }
 
-.container .bioSection__element__title {
+.bioContainer .bioSection__element__title {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 }
 
-.container .bioSection__element__content {
+.bioContainer .bioSection__element__content {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
-.container .bioSection:nth-of-type(odd) {
+.bioContainer .bioSection:nth-of-type(odd) {
   background: #EBEBEB;
 }
 
-.container .bioSection:nth-of-type(even) {
+.bioContainer .bioSection:nth-of-type(even) {
   background: #161616;
   color: #F5F5F5;
 }
 
-.container .bioSection:last-child {
+.bioContainer .bioSection:last-child {
   padding-bottom: 0px;
 }
 
 @media (max-width: 786px) {
-  .container__header {
+  .bioContainer__header {
     padding: 0 16px;
   }
-  .container .bioSection {
+  .bioContainer .bioSection {
     padding: 48px 16px;
   }
-  .container .bioSection__element {
+  .bioContainer .bioSection__element {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     row-gap: 48px;

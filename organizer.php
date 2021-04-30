@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/organizer.css">
+  <!-- <link rel="stylesheet" href="./styles/organizer.css"> -->
   <title>Teatr Polski w Poznaniu | Organizator</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Organizator</h2>
+  <main class="organizerContainer">
+    <header class="organizerContainer__header">
+      <h2 class="organizerContainer__title">Organizator</h2>
     </header>
     <section class="organizer">
       <div class="organizer__leftBar">

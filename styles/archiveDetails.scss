@@ -1,6 +1,6 @@
 @import 'variables';
 
-.container{
+.archiveDetailsContainer{
   @include defaultContainer;
   padding: 96px 120px 48px 120px;
   &__header{
@@ -94,7 +94,7 @@
 }
 
 @media(max-width: 786px){
-  .container{
+  .archiveDetailsbioContainer{
     padding: 96px 16px 48px 16px;
     .details{
       grid-template-columns: 100%;

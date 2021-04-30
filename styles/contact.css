@@ -1,4 +1,4 @@
-.container {
+.contactContainer {
   width: 100%;
   min-height: 100vh;
   -ms-grid-row: 2;
@@ -7,7 +7,7 @@
   min-height: auto;
 }
 
-.container__header {
+.contactContainer__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,14 +24,14 @@
   width: 100%;
 }
 
-.container__title {
+.contactContainer__title {
   font-size: 36px;
   font-weight: 900;
   color: #161616;
   margin-bottom: 48px;
 }
 
-.container .contact {
+.contactContainer .contact {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -39,7 +39,7 @@
       grid-template-columns: repeat(2, 1fr);
 }
 
-.container .contact__wrapper {
+.contactContainer .contact__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +55,7 @@
           align-items: flex-start;
 }
 
-.container .contact__data {
+.contactContainer .contact__data {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,14 +72,14 @@
   margin-bottom: 30px;
 }
 
-.container .contact__data__line {
+.contactContainer .contact__data__line {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   color: #161616;
 }
 
-.container .contact__data__subtitle {
+.contactContainer .contact__data__subtitle {
   font-size: 24px;
   font-weight: 900;
   line-height: 36px;
@@ -87,7 +87,7 @@
   padding-bottom: 18px;
 }
 
-.container .contact__map {
+.contactContainer .contact__map {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -110,10 +110,10 @@
 }
 
 @media (max-width: 786px) {
-  .container {
+  .contactContainer {
     padding: 96px 16px 48px 16px;
   }
-  .container .contact {
+  .contactContainer .contact {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     row-gap: 36px;

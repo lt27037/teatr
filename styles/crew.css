@@ -1,4 +1,4 @@
-.container {
+.crewContainer {
   width: 100%;
   min-height: 100vh;
   -ms-grid-row: 2;
@@ -19,7 +19,7 @@
   padding: 72px 120px 48px 120px;
 }
 
-.container .crew {
+.crewContainer .crew {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -28,20 +28,20 @@
   padding-top: 96px;
 }
 
-.container .crew__header {
+.crewContainer .crew__header {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
   margin-bottom: 48px;
 }
 
-.container .crew__title {
+.crewContainer .crew__title {
   font-size: 36px;
   font-weight: 900;
   color: #161616;
 }
 
-.container .crew__leftBar {
+.crewContainer .crew__leftBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-.container .crew__rightBar {
+.crewContainer .crew__rightBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +74,11 @@
           align-items: flex-end;
 }
 
-.container .crew__photo {
+.crewContainer .crew__photo {
   margin-bottom: 48px;
 }
 
-.container .crew__element {
+.crewContainer .crew__element {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,27 +96,27 @@
   margin-bottom: 24px;
 }
 
-.container .crew__name {
+.crewContainer .crew__name {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 }
 
-.container .crew__content {
+.crewContainer .crew__content {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
 }
 
 @media (max-width: 786px) {
-  .container {
+  .crewContainer {
     padding: 72px 16px 48px 16px;
   }
-  .container .crew {
+  .crewContainer .crew {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
   }
-  .container .crew__rightBar {
+  .crewContainer .crew__rightBar {
     display: none;
   }
 }

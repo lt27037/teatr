@@ -7,6 +7,18 @@
 @import './components/secondaryArticle';
 @import './components/secondaryEvent';
 
+@import 'archive';
+@import 'archiveDetails';
+@import 'bio';
+@import 'contact';
+@import 'crew';
+@import 'eventDetails';
+@import 'idea';
+@import 'news';
+@import 'organizer';
+@import 'partners';
+@import 'program';
+
 body{
   display: grid;
   grid-template-columns: 100%;

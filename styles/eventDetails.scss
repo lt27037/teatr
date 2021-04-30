@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'archiveDetails';
 
-.container{
+.eventDetailsContainer{
   @include defaultContainer;
   .details{
     .main--element{
@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 786px){
-  .container{
+  .eventDetailsContainer{
     .partners{
       &__wrapper{
         flex-direction: column;

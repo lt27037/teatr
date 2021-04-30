@@ -1,4 +1,4 @@
-.container {
+.organizerContainer {
   width: 100%;
   min-height: 100vh;
   -ms-grid-row: 2;
@@ -6,7 +6,7 @@
   padding: 72px 120px 0 120px;
 }
 
-.container__header {
+.organizerContainer__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,13 +23,13 @@
   width: 100%;
 }
 
-.container__title {
+.organizerContainer__title {
   font-size: 36px;
   font-weight: 900;
   color: #161616;
 }
 
-.container__wrapper {
+.organizerContainer__wrapper {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -39,7 +39,7 @@
   margin-bottom: 57px;
 }
 
-.container .organizer {
+.organizerContainer .organizer {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -48,7 +48,7 @@
   padding: 48px 0;
 }
 
-.container .organizer__leftBar {
+.organizerContainer .organizer__leftBar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,18 +64,18 @@
           align-items: flex-start;
 }
 
-.container .organizer__name {
+.organizerContainer .organizer__name {
   font-weight: 900;
   font-size: 24px;
   color: #161616;
 }
 
-.container .organizer__logo {
+.organizerContainer .organizer__logo {
   margin-top: 48px;
   background-color: transparent;
 }
 
-.container .organizer__rightBar {
+.organizerContainer .organizer__rightBar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +92,7 @@
           align-items: flex-start;
 }
 
-.container .organizer__paragraph, .container .organizer__list__title {
+.organizerContainer .organizer__paragraph, .organizerContainer .organizer__list__title {
   width: 100%;
   text-align: left;
   font-size: 16px;
@@ -102,7 +102,7 @@
   margin-bottom: 24px;
 }
 
-.container .organizer__list {
+.organizerContainer .organizer__list {
   -webkit-transform: translateX(24px);
           transform: translateX(24px);
   font-size: 16px;
@@ -110,16 +110,16 @@
   line-height: 24px;
 }
 
-.container .organizer__list__title {
+.organizerContainer .organizer__list__title {
   margin-bottom: 6px;
 }
 
 @media (max-width: 786px) {
-  .container {
+  .organizerContainer {
     padding: 72px 16px 0 16px;
     overflow-x: hidden;
   }
-  .container .organizer {
+  .organizerContainer .organizer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -134,10 +134,10 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .container .organizer__list {
+  .organizerContainer .organizer__list {
     width: calc(100% - 24px);
   }
-  .container .organizer__logo {
+  .organizerContainer .organizer__logo {
     margin-bottom: 48px;
   }
 }

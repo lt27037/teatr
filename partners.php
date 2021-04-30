@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/partners.css">
+  <!-- <link rel="stylesheet" href="./styles/partners.css"> -->
   <title>Teatr Polski w Poznaniu | Partnerzy</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Partnerzy Festiwalu</h2>
+  <main class="partnersContainer">
+    <header class="partnersContainer__header">
+      <h2 class="partnersContainer__title">Partnerzy Festiwalu</h2>
     </header>
     <section class="partnersSection">
       <h3 class="partnersSection__title">Organizatorzy</h3>

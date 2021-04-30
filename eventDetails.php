@@ -3,14 +3,14 @@
 <head>
   <?php @include './bodyElements/head.php' ?>
   <link rel="stylesheet" href="./styles/lightbox.css">
-  <link rel="stylesheet" href="./styles/eventDetails.css">
+  <!-- <link rel="stylesheet" href="./styles/eventDetails.css"> -->
   <title>Teatr Polski w Poznaniu | Wydarzenie</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">KOINCYDENCJA | instalacja multimedialna</h2>
+  <main class="eventDetailsContainer">
+    <header class="eventDetailsContainer__header">
+      <h2 class="eventDetailsContainer__title">KOINCYDENCJA | instalacja multimedialna</h2>
     </header>
     <section class="details">
       <div class="details__element main--element">
@@ -53,7 +53,7 @@
       </div>
     </section>
     <section class="gallery">
-      <h2 class="container__title">Galeria</h2>
+      <h2 class="eventDetailsContainer__title">Galeria</h2>
       <div class="gallery__wrapper">
         <a href="images/gallery-examples/pictures1.jpg" data-lightbox="gallery">
           <img src="./images/gallery-examples/pictures1.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
@@ -67,7 +67,7 @@
       </div>
     </section>
     <section class="partners">
-      <h2 class="container__title">Partnerzy</h2>
+      <h2 class="eventDetailsContainer__title">Partnerzy</h2>
       <div class="partners__wrapper">
         <img 
         src="./images/poznan-logo.svg" 

@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/idea.css">
+  <!-- <link rel="stylesheet" href="./styles/idea.css"> -->
   <title>Teatr Polski w Poznaniu | Idea</title>
 </head>
 <body>
   <?php @include './components/mainHeader.php' ?>
-  <main class="container">
-    <header class="container__header">
-      <h2 class="container__title">Idea</h2>
+  <main class="ideaContainer">
+    <header class="ideaContainer__header">
+      <h2 class="ideaContainer__title">Idea</h2>
     </header>
     <section class="ideaSection">
       <h3 class="ideaSection__title">XIII Spotkania Teatralne Bliscy Nieznajomi: Ukraina</h3>
