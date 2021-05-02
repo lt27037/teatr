@@ -15,7 +15,7 @@
       <div class="organizer__leftBar">
         <h3 class="organizer__name">Teatr Polski</h3>
         <img 
-        src="./images/teatr-polski-logo.svg" 
+        src="./img/teatr-polski-logo.svg" 
         alt="Logo organizatora" 
         class="organizer__logo">
       </div>
@@ -35,7 +35,7 @@
       <div class="organizer__leftBar">
         <h3 class="organizer__name">Fundacja Reszka</h3>
         <img 
-        src="./images/fundacja-reszka-logo.svg" 
+        src="./img/fundacja-reszka-logo.svg" 
         alt="Logo organizatora" 
         class="organizer__logo">
       </div>

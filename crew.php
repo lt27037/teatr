@@ -59,8 +59,8 @@
         </div>
       </div>
       <aside class="crew__rightBar">
-        <img src="./images/crew-photo-1.jpg" alt="Zdjęcie zespołu" class="crew__photo">
-        <img src="./images/crew-photo-2.jpg" alt="Zdjęcie zespołu" class="crew__photo">
+        <img src="./img/crew-photo-1.jpg" alt="Zdjęcie zespołu" class="crew__photo">
+        <img src="./img/crew-photo-2.jpg" alt="Zdjęcie zespołu" class="crew__photo">
       </aside>
     </section>
     <section class="crew">

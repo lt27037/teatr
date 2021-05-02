@@ -15,32 +15,11 @@
       <h3 class="partnersSection__title">Organizatorzy</h3>
       <div class="partnersSection__wrapper">
         <img 
-        src="./images/fundacja-reszka-logo.svg" 
+        src="./img/fundacja-reszka-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
         <img 
-        src="./images/teatr-polski-logo.svg" 
-        alt="Logo partnera festiwalu" 
-        class="partnersSection__logo">
-      </div>
-    </section>
-    <section class="partnersSection">
-      <h3 class="partnersSection__title">Współorganizatorzy</h3>
-      <div class="partnersSection__wrapper">
-        <img 
-        src="./images/poznan-logo.svg" 
-        alt="Logo partnera festiwalu" 
-        class="partnersSection__logo">
-        <img 
-        src="./images/ukrainian-institute-logo.svg" 
-        alt="Logo partnera festiwalu" 
-        class="partnersSection__logo">
-        <img 
-        src="./images/instytut-teatralny-logo.svg" 
-        alt="Logo partnera festiwalu" 
-        class="partnersSection__logo">
-        <img 
-        src="./images/ministerstwo-kultury-logo.svg" 
+        src="./img/teatr-polski-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
       </div>
@@ -49,23 +28,44 @@
       <h3 class="partnersSection__title">Współorganizatorzy</h3>
       <div class="partnersSection__wrapper">
         <img 
-        src="./images/giacomo-conti-logo.svg" 
+        src="./img/poznan-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
         <img 
-        src="./images/bilety-24-logo.svg" 
+        src="./img/ukrainian-institute-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
         <img 
-        src="./images/solor-logo.svg" 
+        src="./img/instytut-teatralny-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
         <img 
-        src="./images/ams-logo.svg" 
+        src="./img/ministerstwo-kultury-logo.svg" 
+        alt="Logo partnera festiwalu" 
+        class="partnersSection__logo">
+      </div>
+    </section>
+    <section class="partnersSection">
+      <h3 class="partnersSection__title">Współorganizatorzy</h3>
+      <div class="partnersSection__wrapper">
+        <img 
+        src="./img/giacomo-conti-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
         <img 
-        src="./images/buswifi-logo.svg" 
+        src="./img/bilety-24-logo.svg" 
+        alt="Logo partnera festiwalu" 
+        class="partnersSection__logo">
+        <img 
+        src="./img/solor-logo.svg" 
+        alt="Logo partnera festiwalu" 
+        class="partnersSection__logo">
+        <img 
+        src="./img/ams-logo.svg" 
+        alt="Logo partnera festiwalu" 
+        class="partnersSection__logo">
+        <img 
+        src="./img/buswifi-logo.svg" 
         alt="Logo partnera festiwalu" 
         class="partnersSection__logo">
       </div>

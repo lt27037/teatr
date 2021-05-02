@@ -55,14 +55,14 @@
     <section class="gallery">
       <h2 class="container__title">Galeria</h2>
       <div class="gallery__wrapper">
-        <a href="images/gallery-examples/pictures1.jpg" data-lightbox="gallery">
-          <img src="./images/gallery-examples/pictures1.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
+        <a href="img/gallery-examples/pictures1.jpg" data-lightbox="gallery">
+          <img src="./img/gallery-examples/pictures1.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
         </a>
-        <a href="images/gallery-examples/pictures3.jpg" data-lightbox="gallery">
-          <img src="./images/gallery-examples/pictures3.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
+        <a href="img/gallery-examples/pictures3.jpg" data-lightbox="gallery">
+          <img src="./img/gallery-examples/pictures3.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
         </a>
-        <a href="images/gallery-examples/pictures2.jpg" data-lightbox="gallery">
-          <img src="./images/gallery-examples/pictures2.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
+        <a href="img/gallery-examples/pictures2.jpg" data-lightbox="gallery">
+          <img src="./img/gallery-examples/pictures2.jpg" alt="Zdjęcie w galerii" class="gallery__picture">
         </a>
       </div>
     </section>
@@ -70,19 +70,19 @@
       <h2 class="container__title">Partnerzy</h2>
       <div class="partners__wrapper">
         <img 
-        src="./images/poznan-logo.svg" 
+        src="./img/poznan-logo.svg" 
         alt="Logo partnera" 
         class="partners__logo">
         <img 
-        src="./images/ukrainian-institute-logo.svg" 
+        src="./img/ukrainian-institute-logo.svg" 
         alt="Logo partnera" 
         class="partners__logo">
         <img 
-        src="./images/instytut-teatralny-logo.svg" 
+        src="./img/instytut-teatralny-logo.svg" 
         alt="Logo partnera" 
         class="partners__logo">
         <img 
-        src="./images/ministerstwo-kultury-logo.svg" 
+        src="./img/ministerstwo-kultury-logo.svg" 
         alt="Logo partnera" 
         class="partners__logo">
       </div>
