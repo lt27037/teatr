@@ -42,7 +42,6 @@
 
 @media(max-width: 786px){
   .container{
-    padding: 96px 16px;
     .news{
       @include elementFlex(column, flex-start, flex-start);
       &__column{

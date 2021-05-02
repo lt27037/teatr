@@ -46,10 +46,7 @@
 
 @media(max-width: 786px){
   .container{
-    padding: 72px 16px 150px 16px;
-    width: auto;
-    overflow-x: hidden;
-    &__years{
+    .archive{
       overflow-x: scroll;
       padding: 16px 0;
       width: 100%;

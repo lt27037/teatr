@@ -167,27 +167,34 @@
 
 @media(max-width: 786px){
   .mainHeader{
-    // justify-content: stretch;
+    width: 100%;
+    min-width: initial;
     padding: 0 16px;
     .logo__wrapper{
       flex-grow: 1;
       z-index: 999;
     }
     .logo.menu--active{
-      path{
-        fill: $darkBgc-100;
-        z-index: 999;
-      }
+      filter: none;
+      z-index: 999;
     }
     .logo.menu--active.submenu--active{
       path{
-        fill: $lightBgc-100;
+        filter: invert(100%) brightness(105%);
         z-index: 999;
       }
     }
     &__wrapper{
+      width: 100%;
+      min-width: initial;
+      &::before{
+        display: none;
+      }
       .button{
         display: none;
+        &::after{
+          display: none;
+        }
       }
     }
     &__nav{

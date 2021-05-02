@@ -268,6 +268,8 @@
 
 @media (max-width: 786px) {
   .mainHeader {
+    width: 100%;
+    min-width: initial;
     padding: 0 16px;
   }
   .mainHeader .logo__wrapper {
@@ -276,15 +278,27 @@
             flex-grow: 1;
     z-index: 999;
   }
-  .mainHeader .logo.menu--active path {
-    fill: #161616;
+  .mainHeader .logo.menu--active {
+    -webkit-filter: none;
+            filter: none;
     z-index: 999;
   }
   .mainHeader .logo.menu--active.submenu--active path {
-    fill: #F5F5F5;
+    -webkit-filter: invert(100%) brightness(105%);
+            filter: invert(100%) brightness(105%);
     z-index: 999;
   }
+  .mainHeader__wrapper {
+    width: 100%;
+    min-width: initial;
+  }
+  .mainHeader__wrapper::before {
+    display: none;
+  }
   .mainHeader__wrapper .button {
+    display: none;
+  }
+  .mainHeader__wrapper .button::after {
     display: none;
   }
   .mainHeader__nav {
@@ -909,7 +923,7 @@ body {
   }
   .container {
     max-width: initial;
-    padding: 48px 16px;
+    padding: 0 16px;
   }
 }
 
@@ -1127,17 +1141,12 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container {
-    padding: 72px 16px 150px 16px;
-    width: auto;
-    overflow-x: hidden;
-  }
-  .container__years {
+  .container .archive {
     overflow-x: scroll;
     padding: 16px 0;
     width: 100%;
   }
-  .container__years__item {
+  .container .archive__item {
     width: 200px;
     margin: 0 36px 0 0;
   }
@@ -1460,9 +1469,6 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container .bioSection {
-    padding: 48px 16px;
-  }
   .container .bioSection__element {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -1647,9 +1653,6 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container {
-    padding: 72px 16px 48px 16px;
-  }
   .container .crew {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -2141,9 +2144,6 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container {
-    padding: 96px 16px 48px 16px;
-  }
   .container .ideaSection {
     display: -ms-grid;
     display: grid;
@@ -2336,9 +2336,6 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container {
-    padding: 96px 16px;
-  }
   .container .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2456,10 +2453,6 @@ body {
 }
 
 @media (max-width: 786px) {
-  .container {
-    padding: 72px 16px 0 16px;
-    overflow-x: hidden;
-  }
   .container .organizer {
     display: -webkit-box;
     display: -ms-flexbox;
