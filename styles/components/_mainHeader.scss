@@ -62,6 +62,7 @@
         width: 50vw;
         background-color: $colorPrimary-100;
         transform: translateX(100%);
+        pointer-events: none;
       }
     }
   }
@@ -98,7 +99,7 @@
         content: '';
         width: 24px;
         height: 24px;
-        background-image: url(../images/small-arrow-white.svg);
+        background-image: url(../img/small-arrow-white.svg);
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
@@ -155,7 +156,7 @@
     }
     .mainHeader__item__title{
       &::after{
-        background-image: url(../images/small-arrow-black.svg);
+        background-image: url(../img/small-arrow-black.svg);
       }
     }
   }
@@ -248,7 +249,7 @@
         position: absolute;
         bottom: 72px;
         right: 16px;
-        background: url('../images/arrow_back-white.svg') no-repeat;
+        background: url('../img/arrow_back-white.svg') no-repeat;
         background-position: center;
         z-index: 999;
       }
@@ -330,7 +331,7 @@
     }
     &__item__title{
       &::after{
-        background-image: url(../images/small-arrow-black.svg);
+        background-image: url(../img/small-arrow-black.svg);
         top: 50%;
         transform: translateY(-50%) rotateZ(-90deg);
         position: absolute;

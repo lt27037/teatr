@@ -108,6 +108,7 @@
   background-color: #3185FC;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  pointer-events: none;
 }
 
 .mainHeader__nav {
@@ -165,7 +166,7 @@
   content: '';
   width: 24px;
   height: 24px;
-  background-image: url(../images/small-arrow-white.svg);
+  background-image: url(../img/small-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -258,7 +259,7 @@
 }
 
 .mainHeader__item:hover .mainHeader__item__title::after {
-  background-image: url(../images/small-arrow-black.svg);
+  background-image: url(../img/small-arrow-black.svg);
 }
 
 .mainHeader__mobileTicket {
@@ -393,7 +394,7 @@
     position: absolute;
     bottom: 72px;
     right: 16px;
-    background: url("../images/arrow_back-white.svg") no-repeat;
+    background: url("../img/arrow_back-white.svg") no-repeat;
     background-position: center;
     z-index: 999;
   }
@@ -489,7 +490,7 @@
     color: inherit;
   }
   .mainHeader__item__title::after {
-    background-image: url(../images/small-arrow-black.svg);
+    background-image: url(../img/small-arrow-black.svg);
     top: 50%;
     -webkit-transform: translateY(-50%) rotateZ(-90deg);
             transform: translateY(-50%) rotateZ(-90deg);
@@ -533,7 +534,7 @@
 .footer__leftBar {
   width: 100%;
   height: 100%;
-  background: url("../images/footer-background-lines.svg") no-repeat;
+  background: url("../img/footer-background-lines.svg") no-repeat;
   background-position: center;
   -ms-grid-column: 1;
   grid-column: 1;
@@ -566,7 +567,7 @@
           align-items: flex-start;
   width: 100%;
   height: 100%;
-  background: url("../images/footer-background-circle.svg") no-repeat;
+  background: url("../img/footer-background-circle.svg") no-repeat;
   background-position: center;
   -ms-grid-column: 2;
   grid-column: 2;
@@ -582,7 +583,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url("../images/footer-background-square.svg") no-repeat;
+  background: url("../img/footer-background-square.svg") no-repeat;
   background-position: bottom right;
 }
 
@@ -666,7 +667,7 @@
   content: '';
   width: 24px;
   height: 24px;
-  background: url("../images/top-right-arrow.svg") no-repeat;
+  background: url("../img/top-right-arrow.svg") no-repeat;
   position: absolute;
   bottom: -12px;
   left: -5px;
@@ -699,7 +700,7 @@
 }
 
 .footer__toTop .footer__link::after {
-  background: url("../images/top-arrow.svg") no-repeat;
+  background: url("../img/top-arrow.svg") no-repeat;
 }
 
 @media (max-width: 786px) {
@@ -968,7 +969,7 @@ body {
   border: none;
   font-size: 0px;
   color: transpatent;
-  background-image: url("../../images/blue-right-arrow.svg");
+  background-image: url("../../img/blue-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1307,7 +1308,7 @@ body {
   left: 24px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("../images/arrow_back.svg");
+  background-image: url("../img/arrow_back.svg");
 }
 
 .container .details__nav__button.button--next {
@@ -1327,7 +1328,7 @@ body {
   right: 24px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("../images/arrow_forward-blue.svg");
+  background-image: url("../img/arrow_forward-blue.svg");
 }
 
 @media (max-width: 786px) {
@@ -1785,7 +1786,7 @@ body {
   left: 24px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("../images/arrow_back.svg");
+  background-image: url("../img/arrow_back.svg");
 }
 
 .container .details__nav__button.button--next {
@@ -1805,7 +1806,7 @@ body {
   right: 24px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url("../images/arrow_forward-blue.svg");
+  background-image: url("../img/arrow_forward-blue.svg");
 }
 
 @media (max-width: 786px) {
@@ -1897,7 +1898,7 @@ body {
   content: '';
   width: 24px;
   height: 24px;
-  background: url("../images/top-right-arrow.svg") no-repeat;
+  background: url("../img/top-right-arrow.svg") no-repeat;
   background-position: center;
   position: absolute;
   right: -4px;
@@ -2219,7 +2220,7 @@ body {
   border: none;
   font-size: 0px;
   color: transpatent;
-  background-image: url("../../images/blue-right-arrow.svg");
+  background-image: url("../../img/blue-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -2600,7 +2601,7 @@ body {
   border: none;
   font-size: 0px;
   color: transpatent;
-  background-image: url("../../images/blue-right-arrow.svg");
+  background-image: url("../../img/blue-right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;

@@ -14,7 +14,7 @@
     width: calc(100% - 228px);
     height: calc(100vh - 112px);
     margin: 0 120px 0 204px;
-    background: url(../images/footer-background-lines.svg) no-repeat;
+    background: url(../img/footer-background-lines.svg) no-repeat;
     background-position: center;
     background-color: $lightBgc-90;
     position: relative;
@@ -147,12 +147,12 @@
         outline: none;
       }
       .button--next{
-        background: url('../../images/arrow_forward.svg') no-repeat;
+        background: url('../../img/arrow_forward.svg') no-repeat;
         background-position: center;
         margin-left: 12px;
       }
       .button--prev{
-        background: url('../../images/arrow_back.svg') no-repeat;
+        background: url('../../img/arrow_back.svg') no-repeat;
         background-position: center;
         margin-right: 12px;
       }
@@ -210,7 +210,7 @@
           right: -12px;
           top: 50%;
           transform: translateX(100%) translateY(-50%);
-          background-image: url(../images/blue-right-arrow.svg);
+          background-image: url(../img/blue-right-arrow.svg);
           background-repeat: no-repeat;
           background-position: center;
           visibility: hidden;

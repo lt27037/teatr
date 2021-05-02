@@ -55,7 +55,7 @@
     &__title{
       &::after{
         transform: translateX(100%) translateY(-50%) rotateZ(-90deg);
-        background-image: url(../images/small-arrow-black.svg);
+        background-image: url(../img/small-arrow-black.svg);
         right: 0;
       }
     }
@@ -91,7 +91,7 @@
     }
     .mainHeader__item__title{
       &::after{
-        background-image: url(../images/small-arrow-white.svg);
+        background-image: url(../img/small-arrow-white.svg);
         transform: translateX(500%) translateY(-50%) rotateZ(-90deg);
       }
     }
