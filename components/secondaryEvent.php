@@ -1,6 +1,6 @@
 <article class="secondaryEvent">
   <img 
-  src="./images/event-picture.png" 
+  src="./img/event-picture.png" 
   alt="Zdjęcie eventu" 
   class="secondaryEvent__picture">
   <section class="secondaryEvent__container">

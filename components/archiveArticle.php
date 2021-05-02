@@ -1,6 +1,6 @@
 <article class="archiveArticle">
   <img 
-  src="./images/artice-picture.png" 
+  src="./img/artice-picture.png" 
   alt="Zdjęcie z artykułu" 
   class="archiveArticle__picture">
   <section class="archiveArticle__container">

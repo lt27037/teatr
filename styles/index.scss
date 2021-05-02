@@ -30,6 +30,15 @@ body{
   }
 }
 
+.logo{
+  width: 40px;
+  height: 80px;
+  filter: invert(100%) brightness(105%);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
 @media(max-width: 786px){
   body{
     overflow-x: hidden;

@@ -1,6 +1,6 @@
 <article class="primaryArticle">
   <img 
-  src="./images/artice-picture.png" 
+  src="./img/artice-picture.png" 
   alt="Zdjęcie z artykułu" 
   class="primaryArticle__picture">
   <section class="primaryArticle__container">

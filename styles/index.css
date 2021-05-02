@@ -549,6 +549,8 @@
   position: absolute;
   left: calc(50vw - 600px);
   bottom: 36px;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .footer__rightBar {
@@ -887,6 +889,16 @@ body {
   font-weight: 900;
   color: #161616;
   margin-bottom: 48px;
+}
+
+.logo {
+  width: 40px;
+  height: 80px;
+  -webkit-filter: invert(100%) brightness(105%);
+          filter: invert(100%) brightness(105%);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 @media (max-width: 786px) {
