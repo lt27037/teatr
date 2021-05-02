@@ -777,13 +777,6 @@
   opacity: 0;
 }
 
-.container {
-  width: 100%;
-  min-height: 100vh;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
 .container .topSection {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/program.css">
+  <!-- <link rel="stylesheet" href="./styles/program.css"> -->
   <title>Teatr Polski w Poznaniu | Program Festiwalu</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <header class="container__header">
       <h2 class="container__title">Program Festiwalu</h2>
     </header>
-    <section class="container__wrapper">
+    <section class="program">
       <?php @include './components/primaryEvent.php' ?>
       <?php @include './components/primaryEvent.php' ?>
       <?php @include './components/primaryEvent.php' ?>

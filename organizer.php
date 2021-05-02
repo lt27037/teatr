@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/organizer.css">
+  <!-- <link rel="stylesheet" href="./styles/organizer.css"> -->
   <title>Teatr Polski w Poznaniu | Organizator</title>
 </head>
 <body>

@@ -1,13 +1,12 @@
-@import 'variables';
-@import './components/homePageMenu';
-@import './components/scrollIcon';
+@import '../variables';
+@import '../components/homePageMenu';
+@import '../components/scrollIcon';
 
 .mainHeader__list{
   opacity: 0;
 }
 
 .container{
-  @include defaultContainer;
   .topSection{
     @include elementFlex(row, center, center);
     width: calc(100% - 444px);

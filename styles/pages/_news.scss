@@ -1,18 +1,8 @@
-@import 'variables';
-@import './components/primaryArticle';
+@import '../variables';
+@import '../components/primaryArticle';
 
 .container{
-  @include defaultContainer;
-  padding: 96px 120px;
-  &__header{
-    @include elementFlex(row, flex-start, center);
-    width: 100%;
-  }
-  &__title{
-    @include mainTitle;
-    margin-bottom: 48px;
-  }
-  &__wrapper{
+  .news{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,7 +43,7 @@
 @media(max-width: 786px){
   .container{
     padding: 96px 16px;
-    &__wrapper{
+    .news{
       @include elementFlex(column, flex-start, flex-start);
       &__column{
         width: 100%;

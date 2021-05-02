@@ -1,18 +1,8 @@
-@import 'variables';
-@import './components/archiveArticle';
+@import '../variables';
+@import '../components/archiveArticle';
 
 .container{
-  @include defaultContainer;
-  padding: 72px 120px 150px 120px;
-  &__header{
-    @include elementFlex(row, flex-start, center);
-    width: 100%;
-  }
-  &__title{
-    @include mainTitle;
-    margin-bottom: 48px;
-  }
-  &__years{
+  .archive{
     width: 100%;
     &__list{
       @include elementFlex(row, flex-start, center);

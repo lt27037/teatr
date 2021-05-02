@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/bio.css">
+  <!-- <link rel="stylesheet" href="./styles/bio.css"> -->
   <title>Teatr Polski w Poznaniu | Biogramy</title>
 </head>
 <body>

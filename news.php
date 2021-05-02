@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/news.css">
+  <!-- <link rel="stylesheet" href="./styles/news.css"> -->
   <title>Teatr Polski w Poznaniu | Aktualnie</title>
 </head>
 <body>
@@ -11,14 +11,14 @@
     <header class="container__header">
       <h2 class="container__title">Aktualnie</h2>
     </header>
-    <section class="container__wrapper">
-      <div class="container__wrapper__column">
+    <section class="news">
+      <div class="news__column">
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
       </div>
-      <div class="container__wrapper__column">
+      <div class="news__column">
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>
         <?php @include './components/primaryArticle.php' ?>

@@ -1,8 +1,7 @@
-@import 'variables';
-@import 'archiveDetails';
+@import '../variables';
+@import './archiveDetails';
 
 .container{
-  @include defaultContainer;
   .details{
     .main--element{
       grid-column: 1 / 3;

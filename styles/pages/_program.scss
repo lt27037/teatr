@@ -1,0 +1,20 @@
+@import '../variables';
+@import '../components/primaryEvent';
+
+.container{
+  .program{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 57px;
+    margin-bottom: 57px;
+  }
+}
+
+@media(max-width: 786px){
+  .container{
+    .program{
+      @include elementFlex(column, flex-start, flex-start);
+    }
+  }
+}

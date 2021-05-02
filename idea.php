@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <?php @include './bodyElements/head.php' ?>
-  <link rel="stylesheet" href="./styles/idea.css">
+  <!-- <link rel="stylesheet" href="./styles/idea.css"> -->
   <title>Teatr Polski w Poznaniu | Idea</title>
 </head>
 <body>

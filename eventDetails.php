@@ -3,7 +3,7 @@
 <head>
   <?php @include './bodyElements/head.php' ?>
   <link rel="stylesheet" href="./styles/lightbox.css">
-  <link rel="stylesheet" href="./styles/eventDetails.css">
+  <!-- <link rel="stylesheet" href="./styles/eventDetails.css"> -->
   <title>Teatr Polski w Poznaniu | Wydarzenie</title>
 </head>
 <body>

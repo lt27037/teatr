@@ -1,17 +1,6 @@
-@import 'variables';
+@import '../variables';
 
 .container{
-  @include defaultContainer;
-  @include elementFlex(column, flex-start, flex-start);
-  padding: 96px 120px 0 120px;
-  &__header{
-    @include elementFlex(row, flex-start, center);
-    width: 100%;
-  }
-  &__title{
-    @include mainTitle;
-    margin-bottom: 48px;
-  }
   .partnersSection{
     width: 100%;
     margin-bottom: 96px;
@@ -31,7 +20,6 @@
 
 @media(max-width: 786px){
   .container{
-    padding: 96px 16px 0 16px;
     .partnersSection{
       width: 100%;
       margin-bottom: 96px;
