@@ -1,7 +1,9 @@
 @import '../variables';
-@import '../components/primaryArticle';
+@import 'primaryArticle';
+@import 'buttons';
 
 .secondaryArticle{
+  @extend .primaryArticle;
   @include elementFlex(column, flex-start, flex-start);
   margin: 24px 0 54px 0;
   &__date{
@@ -16,5 +18,4 @@
   &__button{
     @extend .primaryArticle__button;
   }
-
 }

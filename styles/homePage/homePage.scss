@@ -1,17 +1,19 @@
 @import '../variables';
 @import '../components/homePageMenu';
 @import '../components/scrollIcon';
+@import '../components/secondaryArticle';
 
 .mainHeader__list{
   opacity: 0;
 }
 
 .container{
+  margin-top: 0;
   .topSection{
     @include elementFlex(row, center, center);
-    width: calc(100% - 444px);
+    width: calc(100% - 228px);
     height: calc(100vh - 112px);
-    margin: 0 120px 0 324px;
+    margin: 0 120px 0 204px;
     background: url(../images/footer-background-lines.svg) no-repeat;
     background-position: center;
     background-color: $lightBgc-90;
@@ -22,7 +24,7 @@
     }
     &::after{
       content: '';
-      width: 120px;
+      width: 50vw;
       height: 164px;
       position: absolute;
       right: 0;
@@ -39,7 +41,7 @@
     @include elementFlex(column, flex-start, center);
     width: 100%;
     min-height: 100vh;
-    padding: 96px 120px 120px 120px;
+    padding: 96px 0 120px 0;
     &__header{
       @include elementFlex(row, space-between, center);
       width: 100%;
@@ -78,8 +80,8 @@
   }
   .programSection{
     width: 100%;
-    min-height: 100vh;
-    padding: 96px 0 120px 120px;
+    // min-height: 100vh;
+    padding: 80px 0 ;
     background-color: $darkBgc-100;
     margin-top: 144px;
     position: relative;
@@ -87,36 +89,54 @@
     &__title{
       @include font900($lightFont-100);
     }
+    // .owl-carousel{
+    //   position: relative;
+    // }
+    // .owl-stage-outer{
+    //   position: absolute;
+    // }
     .owl-prev,
     .owl-next{
       visibility: hidden;
     }
     &::after{
       content: '';
-      width: 100%;
+      width: 100vw;
       height: 96px;
       position: absolute;
       background: $mainYellow;
       top: 0;
-      left: 0;
-      transform: translateY(-100%);
+      left: 50%;
+      transform: translateY(-100%) translateX(-50%);
     }
     &::before{
       content: '';
-      width: 120px;
+      width: 50vw;
       height: 48px;
       position: absolute;
       top: -96px;
       left: 0;
       background: $darkBgc-100;
-      transform: translateY(-100%);
+      transform: translateY(-100%) translateX(-100%);
     }
     &__header{
       @extend .newsSection__header;
       justify-content: stretch;
-      padding: 0 120px 48px 0px;
+      padding: 0 0 48px 0;
+      &::before{
+        content: '';
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        background-color: $darkBgc-100;
+        z-index: -1;
+      }
       &__buttons{
         @include elementFlex(row, center, center);
+        z-index: 100;
       }
       &__button{
         width: 24px;
@@ -127,12 +147,12 @@
         outline: none;
       }
       .button--next{
-        background: url('../images/arrow_forward.svg') no-repeat;
+        background: url('../../images/arrow_forward.svg') no-repeat;
         background-position: center;
         margin-left: 12px;
       }
       .button--prev{
-        background: url('../images/arrow_back.svg') no-repeat;
+        background: url('../../images/arrow_back.svg') no-repeat;
         background-position: center;
         margin-right: 12px;
       }
@@ -149,7 +169,7 @@
   .archivesSection{
     @include elementFlex(column, flex-start, center);
     width: 100%;
-    padding: 96px 120px;
+    padding: 96px 0;
     &__header{
       @extend .newsSection__header;
       padding-bottom: 51px;

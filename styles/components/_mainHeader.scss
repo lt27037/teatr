@@ -3,12 +3,12 @@
 .mainHeader{
   z-index: 999;
   @include elementFlex(row, stretch, center);
-  width: 80%;
+  width: 1000px;
   height: 112px;
   background-color: $darkBgc-100;
-  padding: 0 45px 0 120px;
-  flex-grow: 1;
+  padding: 0 0px;
   color: $lightFont-100;
+  flex-grow: 1;
   &__mobileButton{
     display: none;
   }
@@ -19,6 +19,7 @@
     }
   }
   &__language{
+    display: none;
     font-weight: 900;
     font-size: 14px;
     color: $lightFont-100;
@@ -32,11 +33,36 @@
     z-index: 999;
     position: fixed;
     @include elementFlex(row, stretch, center);
-    width: 100%;
+    width: 1200px;
+    max-width: 1200px;
+    justify-self: center;
+    left: 50%;
+    transform: translateX(-50%);
     grid-row: 1;
+    &::before{
+      content: '';
+      z-index: -1;
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      background-color: $darkBgc-100;
+    }
     .button{
       width: 198px;
       height: 112px;
+      &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50vw;
+        background-color: $colorPrimary-100;
+        transform: translateX(100%);
+      }
     }
   }
   &__nav{

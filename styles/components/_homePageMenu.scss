@@ -8,11 +8,22 @@
     transform: translateX(-100%);
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0px;
     background-color: $mainYellow;
-    width: 324px;
+    width: 228px;
     height: calc(100vh - 112px);
-    padding: 84px 0 0 96px;
+    padding: 84px 0 0 0;
+    &::before{
+      content: '';
+      background-color: $mainYellow;
+      position: absolute;
+      width: 50vw;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      z-index: -1; 
+    }
   }
   &__list{
     @include elementFlex(row, flex-start, center);
@@ -51,10 +62,11 @@
   }
   &__submenu{
     @extend .mainHeader__submenu;
-    right: 0;
+    width: 324px;
+    right: -48px;
     top: 0;
     z-index: 100;
-    transform: translateX(100%);
+    transform: translateX(227px);
     padding: 84px 0 0 0;
     a{
       padding: 0;
@@ -63,7 +75,7 @@
     }
     &__item{
       @extend .mainHeader__item;
-      @include elementFlex(row, flex-start, center);
+      @include elementFlex(row, flex-start, center); 
       padding: 0 0 0 24px;
       height: 48px;
       width: 100%;

@@ -29,10 +29,11 @@
     grid-column: 1;
     grid-row: 1;
     padding: 96px 0 0 120px;
+    padding-left: calc(50vw - 600px);
     position: relative;
     .logo{
       position: absolute;
-      left: 120px;
+      left: calc(50vw - 600px);
       bottom: 36px;
     }
   }

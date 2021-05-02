@@ -2,6 +2,15 @@
 
 .primaryArticle{
   @include elementFlex(row, stretch, flex-start);
+  padding: 6px;
+  transition: background .2s;
+  &:hover{
+    background: $lightBgc-90;
+    .primaryArticle__button{
+      transform: translateX(10px);
+      width: 40px;
+    }
+  }
   &__picture{
     width: 224px;
   }
@@ -34,7 +43,7 @@
     border: none;
     font-size: 0px;
     color: transpatent;
-    background-image: url('../images/blue-right-arrow.svg');
+    background-image: url('../../images/blue-right-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
