@@ -39,6 +39,10 @@ body{
   -moz-user-select: none;
 }
 
+.contentWrapper{
+  width: 100%;
+}
+
 @media(max-width: 786px){
   body{
     overflow-x: hidden;

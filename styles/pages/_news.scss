@@ -4,38 +4,30 @@
 .container{
   .news{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 48px;
-    column-gap: 48px;
-    margin-bottom: 57px;
-    &__column{
-      width: 100%;
-      display: grid;
-      grid-template-columns: 100%;
-      row-gap: 48px;
-      &:nth-of-type(1){
-        grid-template-rows: repeat(auto-fill, 490px 320px);
-        .primaryArticle:nth-child(even){
-          height: 320px;
-          overflow: hidden;
-        }
-        .primaryArticle:nth-child(odd){
-           height: 490px;
-           overflow: hidden;
-        }
-      }
-      &:nth-of-type(2){
-        grid-template-rows: repeat(auto-fill, 320px 490px);
-        .primaryArticle:nth-child(odd){
-          height: 320px;
-          overflow: hidden;
-        }
-        .primaryArticle:nth-child(even){
-           height: 490px;
-           overflow: hidden;
-        }
-      }
+    height: 300vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    .primaryArticle{
+      width: 50%;
+      margin-bottom: 48px;
+      overflow: hidden;
+    }
+    .primaryArticle:nth-child(4n+1){
+      order: 1;
+      height: 360px;
+    }
+    .primaryArticle:nth-child(4n+2){
+      order: 2;
+      height: 490px;
+    }
+    .primaryArticle:nth-child(4n+3){
+      order: 1;
+      height: 490px;
+    }
+    .primaryArticle:nth-child(4n+4){
+      order: 2;
+      height: 360px;
     }
   }
 }
@@ -43,21 +35,18 @@
 @media(max-width: 786px){
   .container{
     .news{
-      @include elementFlex(column, flex-start, flex-start);
-      &__column{
+      display: grid;
+      height: auto;
+      .primaryArticle{
         width: 100%;
-        @include elementFlex(column, flex-start, flex-start);
-        &:nth-of-type(1),
-        &:nth-of-type(2){
-          .primaryArticle:nth-child(even){
-            height: 490px;
-            overflow: hidden;
-          }
-          .primaryArticle:nth-child(odd){
-             height: 490px;
-             overflow: hidden;
-          }
-        }
+        margin-bottom: 24px;
+      }
+      .primaryArticle:nth-child(4n+1),
+      .primaryArticle:nth-child(4n+2),
+      .primaryArticle:nth-child(4n+3),
+      .primaryArticle:nth-child(4n+4){
+        order: initial;
+        height: auto;
       }
     }
   }
