@@ -1316,6 +1316,10 @@
   padding: 96px 0;
 }
 
+.container .archivesSection .linkWrapper {
+  width: 100%;
+}
+
 .container .archivesSection__header {
   padding-bottom: 51px;
 }

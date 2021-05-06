@@ -11,6 +11,7 @@
   &__picture{
     width: 282px;
     height: 188px;
+    object-fit: cover;
   }
   &__container{
     @extend .primaryArticle__container;

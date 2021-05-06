@@ -4,28 +4,31 @@
 .container{
   .news{
     width: 100%;
-    height: 300vh;
+    height: 350vh;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
-    .primaryArticle{
+    .linkWrapper{
       width: 50%;
       margin-bottom: 48px;
       overflow: hidden;
+      .primaryArticle{
+        width: 100%;
+      }
     }
-    .primaryArticle:nth-child(4n+1){
+    .linkWrapper:nth-child(4n+1){
       order: 1;
       height: 360px;
     }
-    .primaryArticle:nth-child(4n+2){
+    .linkWrapper:nth-child(4n+2){
       order: 2;
       height: 490px;
     }
-    .primaryArticle:nth-child(4n+3){
+    .linkWrapper:nth-child(4n+3){
       order: 1;
       height: 490px;
     }
-    .primaryArticle:nth-child(4n+4){
+    .linkWrapper:nth-child(4n+4){
       order: 2;
       height: 360px;
     }
@@ -37,14 +40,17 @@
     .news{
       display: grid;
       height: auto;
-      .primaryArticle{
+      .linkWrapper{
         width: 100%;
         margin-bottom: 24px;
+        .primaryArticle{
+          width: 100%;
+        }
       }
-      .primaryArticle:nth-child(4n+1),
-      .primaryArticle:nth-child(4n+2),
-      .primaryArticle:nth-child(4n+3),
-      .primaryArticle:nth-child(4n+4){
+      .linkWrapper:nth-child(4n+1),
+      .linkWrapper:nth-child(4n+2),
+      .linkWrapper:nth-child(4n+3),
+      .linkWrapper:nth-child(4n+4){
         order: initial;
         height: auto;
       }

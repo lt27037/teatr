@@ -12,15 +12,17 @@
       <h2 class="container__title">Aktualnie</h2>
     </header>
     <section class="news">
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
-      <?php @include './components/primaryArticle.php' ?>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
+      <a href="" class="linkWrapper"><?php @include './components/primaryArticle.php' ?></a>
     </section>
     <button class="button button--ghost">Wczytaj więcej</button>
   </main>

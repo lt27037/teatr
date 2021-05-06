@@ -52,9 +52,10 @@
         </nav>
       </header>
       <div class="owl-carousel owl-theme">
-        <?php @include './components/secondaryEvent.php' ?>
-        <?php @include './components/secondaryEvent.php' ?>
-        <?php @include './components/secondaryEvent.php' ?>
+        <a href="" class="linkWrapper"><?php @include './components/secondaryEvent.php' ?></a>
+        <a href="" class="linkWrapper"><?php @include './components/secondaryEvent.php' ?></a>
+        <a href="" class="linkWrapper"><?php @include './components/secondaryEvent.php' ?></a>
+        <a href="" class="linkWrapper"><?php @include './components/secondaryEvent.php' ?></a>
       </div>
     </section>
     <section class="archivesSection">
@@ -64,22 +65,30 @@
           <button class="button button--ghost">Zobacz wszystkie</button>
         </a>
       </header>
-      <article class="archivesSection__item">
-        <span class="archivesSection__item__content content--title">Ukraina</span>
-        <span class="archivesSection__item__content">2019</span>
-      </article>
-      <article class="archivesSection__item">
-        <span class="archivesSection__item__content content--title">Polska</span>
-        <span class="archivesSection__item__content">2018</span>
-      </article>
-      <article class="archivesSection__item">
-        <span class="archivesSection__item__content content--title">One</span>
-        <span class="archivesSection__item__content">2015</span>
-      </article>
-      <article class="archivesSection__item">
-        <span class="archivesSection__item__content content--title">Kain i Abel</span>
-        <span class="archivesSection__item__content">2014</span>
-      </article>
+      <a href="" class="linkWrapper">
+        <article class="archivesSection__item">
+          <span class="archivesSection__item__content content--title">Ukraina</span>
+          <span class="archivesSection__item__content">2019</span>
+        </article>
+      </a>
+      <a href="" class="linkWrapper">
+        <article class="archivesSection__item">
+          <span class="archivesSection__item__content content--title">Ukraina</span>
+          <span class="archivesSection__item__content">2019</span>
+        </article>
+      </a>
+      <a href="" class="linkWrapper">
+        <article class="archivesSection__item">
+          <span class="archivesSection__item__content content--title">Ukraina</span>
+          <span class="archivesSection__item__content">2019</span>
+        </article>
+      </a>
+      <a href="" class="linkWrapper">
+        <article class="archivesSection__item">
+          <span class="archivesSection__item__content content--title">Ukraina</span>
+          <span class="archivesSection__item__content">2019</span>
+        </article>
+      </a>
     </section>
   </main>
   <?php @include './components/footer.php' ?>
