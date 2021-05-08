@@ -1110,7 +1110,15 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #161616;
-  margin-right: 36px;
+  margin-right: 26px;
+  -webkit-transition: background .1s;
+  transition: background .1s;
+  padding: 5px 10px;
+}
+
+.container .archive__item:hover {
+  text-decoration: underline;
+  background: #EBEBEB;
 }
 
 .container .archive__link {
@@ -1166,6 +1174,10 @@ body {
   .container .archive__item {
     width: 200px;
     margin: 0 36px 0 0;
+  }
+  .container .archive__item:hover {
+    -webkit-transform: none;
+            transform: none;
   }
   .container .category {
     display: -webkit-box;
