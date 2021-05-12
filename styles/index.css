@@ -1015,7 +1015,6 @@ body {
 
 .primaryArticle__picture {
   width: 224px;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2275,7 +2274,6 @@ body {
 
 .primaryArticle__picture {
   width: 224px;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2402,7 +2400,7 @@ body {
   height: 360px;
 }
 
-.container .news .linkWrapper:nth-child(4n+1) .primaryArticle.primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+1) .primaryArticle__picture.archiveArticle {
+.container .news .linkWrapper:nth-child(4n+1) .primaryArticle .primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+1) .archiveArticle .primaryArticle__picture {
   height: 360px;
 }
 
@@ -2413,7 +2411,7 @@ body {
   height: 490px;
 }
 
-.container .news .linkWrapper:nth-child(4n+2) .primaryArticle.primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+2) .primaryArticle__picture.archiveArticle {
+.container .news .linkWrapper:nth-child(4n+2) .primaryArticle .primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+2) .archiveArticle .primaryArticle__picture {
   height: 490px;
 }
 
@@ -2424,7 +2422,7 @@ body {
   height: 490px;
 }
 
-.container .news .linkWrapper:nth-child(4n+3) .primaryArticle.primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+3) .primaryArticle__picture.archiveArticle {
+.container .news .linkWrapper:nth-child(4n+3) .primaryArticle .primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+3) .archiveArticle .primaryArticle__picture {
   height: 490px;
 }
 
@@ -2435,7 +2433,7 @@ body {
   height: 360px;
 }
 
-.container .news .linkWrapper:nth-child(4n+4) .primaryArticle.primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+4) .primaryArticle__picture.archiveArticle {
+.container .news .linkWrapper:nth-child(4n+4) .primaryArticle .primaryArticle__picture, .container .news .linkWrapper:nth-child(4n+4) .archiveArticle .primaryArticle__picture {
   height: 360px;
 }
 
@@ -2661,7 +2659,6 @@ body {
 
 .primaryArticle__picture {
   width: 224px;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

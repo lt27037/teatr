@@ -19,28 +19,28 @@
     .linkWrapper:nth-child(4n+1){
       order: 1;
       height: 360px;
-      .primaryArticle.primaryArticle__picture{
+      .primaryArticle .primaryArticle__picture{
         height: 360px;
       }
     }
     .linkWrapper:nth-child(4n+2){
       order: 2;
       height: 490px;
-      .primaryArticle.primaryArticle__picture{
+      .primaryArticle .primaryArticle__picture{
         height: 490px;
       }
     }
     .linkWrapper:nth-child(4n+3){
       order: 1;
       height: 490px;
-      .primaryArticle.primaryArticle__picture{
+      .primaryArticle .primaryArticle__picture{
         height: 490px;
       }
     }
     .linkWrapper:nth-child(4n+4){
       order: 2;
       height: 360px;
-      .primaryArticle.primaryArticle__picture{
+      .primaryArticle .primaryArticle__picture{
         height: 360px;
       }
     }

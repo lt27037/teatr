@@ -881,7 +881,6 @@
 
 .primaryArticle__picture {
   width: 224px;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
