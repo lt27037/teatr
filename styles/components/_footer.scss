@@ -138,6 +138,16 @@
   .footer{
     @include elementFlex(column, flex-start, flex-start);
     height: initial;
+    padding: 0;
+    &.footer--contact{
+      height: 300px;
+      .footer__rightBar{
+        background: $mainYellow;
+      }
+      .footer__leftBar{
+        display: none;
+      }
+    }
     &__leftBar{
       grid-column: initial;
       width: 100%;
@@ -155,7 +165,8 @@
       grid-row: initial;
       width: 100%;
       height: 760px;
-      background-position: bottom left;
+      background-position: center;
+      background-size: 100%;
       position: relative;
       &::after{
         width: 86px;

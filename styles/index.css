@@ -308,7 +308,7 @@
     min-width: initial;
   }
   .mainHeader__wrapper::before {
-    display: none;
+    left: 50%;
   }
   .mainHeader__wrapper .button {
     display: none;
@@ -767,6 +767,16 @@
         -ms-flex-align: start;
             align-items: flex-start;
     height: initial;
+    padding: 0;
+  }
+  .footer.footer--contact {
+    height: 300px;
+  }
+  .footer.footer--contact .footer__rightBar {
+    background: #FFCD4C;
+  }
+  .footer.footer--contact .footer__leftBar {
+    display: none;
   }
   .footer__leftBar {
     grid-column: initial;
@@ -785,7 +795,8 @@
     grid-row: initial;
     width: 100%;
     height: 760px;
-    background-position: bottom left;
+    background-position: center;
+    background-size: 100%;
     position: relative;
   }
   .footer__rightBar::after {
