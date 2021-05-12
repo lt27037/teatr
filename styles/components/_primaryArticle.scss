@@ -13,6 +13,9 @@
   }
   &__picture{
     width: 224px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   &__container{
     flex-grow: 1;
