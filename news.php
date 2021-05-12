@@ -20,16 +20,14 @@
   </main>
   <?php @include './components/footer.php' ?>
   <script>
-    
     const wrapper = document.querySelector('.news');
 
     const handleResize = () => {
       const posts = document.getElementsByClassName('primaryArticle');
       wrapper.style.height = `${Math.ceil(posts.length / 2) * 490}px`;
-    }
+    };
 
     window.onload = () => handleResize();
-
   </script>
 </body>
 </html>
