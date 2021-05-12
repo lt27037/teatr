@@ -3,7 +3,8 @@
 .mainHeader{
   z-index: 999;
   @include elementFlex(row, stretch, center);
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 112px;
   background-color: $darkBgc-100;
   padding: 0 0px;
@@ -45,7 +46,7 @@
       width: 100vw;
       height: 100%;
       position: absolute;
-      left: 50%;
+      left: 45%;
       top: 0;
       transform: translateX(-50%);
       background-color: $darkBgc-100;
@@ -53,10 +54,12 @@
     .button{
       width: 198px;
       height: 112px;
+      z-index: 5;
       &::after{
         content: '';
         position: absolute;
-        right: 0;
+        right: 10px;
+        z-index: 4;
         top: 0;
         height: 100%;
         width: 50vw;
@@ -162,6 +165,20 @@
   }
   &__mobileTicket{
     display: none;
+  }
+}
+
+@media(max-width: 1250px){
+  .mainHeader{
+    width: 100%;
+    max-width: initial;
+    &__wrapper{
+      width: 100%;
+      padding: 0 16px;
+      .button::after{
+        right: 20px;
+      }
+    }
   }
 }
 

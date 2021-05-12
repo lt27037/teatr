@@ -20,7 +20,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   height: 112px;
   background-color: #161616;
   padding: 0 0px;
@@ -84,7 +85,7 @@
   width: 100vw;
   height: 100%;
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -94,12 +95,14 @@
 .mainHeader__wrapper .button {
   width: 198px;
   height: 112px;
+  z-index: 5;
 }
 
 .mainHeader__wrapper .button::after {
   content: '';
   position: absolute;
-  right: 0;
+  right: 10px;
+  z-index: 4;
   top: 0;
   height: 100%;
   width: 50vw;
@@ -262,6 +265,20 @@
 
 .mainHeader__mobileTicket {
   display: none;
+}
+
+@media (max-width: 1250px) {
+  .mainHeader {
+    width: 100%;
+    max-width: initial;
+  }
+  .mainHeader__wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .mainHeader__wrapper .button::after {
+    right: 20px;
+  }
 }
 
 @media (max-width: 786px) {
@@ -516,7 +533,7 @@
 
 .footer {
   width: 100%;
-  height: 100%;
+  height: 712px;
   -ms-grid-row: 3;
   grid-row: 3;
   display: -ms-grid;
@@ -529,6 +546,14 @@
   font-weight: 700;
   margin-top: 96px;
   position: relative;
+}
+
+.footer.footer--contact {
+  height: 200px;
+}
+
+.footer.footer--contact .footer__rightBar {
+  background: #FFCD4C;
 }
 
 .footer::after {
@@ -717,6 +742,15 @@
   background: url("../img/top-arrow.svg") no-repeat;
 }
 
+@media (max-width: 1250px) {
+  .footer {
+    padding: 0 0 0 16px;
+  }
+  .footer__leftBar .logo {
+    left: 0px;
+  }
+}
+
 @media (max-width: 786px) {
   .footer {
     display: -webkit-box;
@@ -851,8 +885,8 @@ body {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 112px 1fr 712px;
-      grid-template-rows: 112px 1fr 712px;
+  -ms-grid-rows: 112px 1fr auto;
+      grid-template-rows: 112px 1fr auto;
   background-color: #f5f5f5;
   overflow-x: hidden;
   margin: 0;
@@ -932,6 +966,12 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1250px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
 @media (max-width: 786px) {
   body {
     overflow-x: hidden;
@@ -981,7 +1021,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 364px;
+  width: 100%;
+  max-width: 364px;
   padding: 24px 0 0 24px;
 }
 
@@ -1056,6 +1097,7 @@ body {
   }
   .primaryArticle__container, .archiveArticle__container, .secondaryEvent__container, .primaryEvent__container {
     padding: 24px 0;
+    width: 100%;
   }
   .primaryArticle__button:hover, .archiveArticle__button:hover, .secondaryEvent__button:hover, .primaryEvent__button:hover {
     -webkit-transform: translateX(0);
@@ -1071,6 +1113,10 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.archiveArticle__container {
+  width: 100%;
 }
 
 @media (max-width: 786px) {
@@ -1121,13 +1167,13 @@ body {
   background: #EBEBEB;
 }
 
+.container .archive__item.item--active .archive__link {
+  color: #3185FC;
+}
+
 .container .archive__link {
   text-decoration: none;
   color: #161616;
-}
-
-.container .archive .item--active .container__years__link {
-  color: #3185FC;
 }
 
 .container .category {
@@ -2230,7 +2276,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 364px;
+  width: 100%;
+  max-width: 364px;
   padding: 24px 0 0 24px;
 }
 
@@ -2305,6 +2352,7 @@ body {
   }
   .primaryArticle__container, .archiveArticle__container, .secondaryEvent__container, .primaryEvent__container {
     padding: 24px 0;
+    width: 100%;
   }
   .primaryArticle__button:hover, .archiveArticle__button:hover, .secondaryEvent__button:hover, .primaryEvent__button:hover {
     -webkit-transform: translateX(0);
@@ -2587,7 +2635,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  width: 364px;
+  width: 100%;
+  max-width: 364px;
   padding: 24px 0 0 24px;
 }
 
@@ -2662,6 +2711,7 @@ body {
   }
   .primaryArticle__container, .archiveArticle__container, .secondaryEvent__container, .primaryEvent__container {
     padding: 24px 0;
+    width: 100%;
   }
   .primaryArticle__button:hover, .archiveArticle__button:hover, .secondaryEvent__button:hover, .primaryEvent__button:hover {
     -webkit-transform: translateX(0);

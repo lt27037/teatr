@@ -8,7 +8,7 @@
 body{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 112px 1fr 712px;
+  grid-template-rows: 112px 1fr auto;
   background-color: #f5f5f5;
   overflow-x: hidden;
   margin: 0;
@@ -53,6 +53,12 @@ body{
   .secondaryArticle,
   .secondaryEvent{
     width: 100%;
+  }
+}
+
+@media(max-width: 1250px){
+  .container{
+    padding: 0 16px;
   }
 }
 

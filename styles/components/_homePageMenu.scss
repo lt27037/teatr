@@ -28,7 +28,7 @@
   &__list{
     @include elementFlex(row, flex-start, center);
     list-style: none;
-    height: 112px;
+    margin: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;

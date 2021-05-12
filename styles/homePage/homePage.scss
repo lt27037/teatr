@@ -243,9 +243,9 @@
     overflow-x: hidden;
     .topSection{
       align-items: flex-start;
-      width: calc(100% - 16px);
-      margin: 0 16px 0 0;
-      padding: 104px 0 0 16px;
+      width: 100%;
+      margin: 0;
+      padding: 104px 0 0 0;
       &__mobileIcon{
         display: block;
         width: 24px;

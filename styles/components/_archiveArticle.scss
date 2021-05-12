@@ -1,6 +1,5 @@
 @import '../variables';
 @import './primaryArticle';
-
 @import '../variables';
 
 .archiveArticle{
@@ -13,6 +12,7 @@
   }
   &__container{
     @extend .primaryArticle__container;
+    width: 100%;
   }
   &__date{
     @extend .primaryArticle__date;

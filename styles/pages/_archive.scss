@@ -21,14 +21,14 @@
         background: $lightBgc-90;
       }
     }
+    &__item.item--active{
+      .archive__link{
+        color: $colorPrimary-100;
+      }
+    }
     &__link{
       text-decoration: none;
       color: $darkFont-100;
-    }
-    .item--active{
-      .container__years__link{
-        color: $colorPrimary-100;
-      }
     }
   }
   .category{

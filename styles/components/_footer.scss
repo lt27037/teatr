@@ -2,7 +2,7 @@
 
 .footer{
   width: 100%;
-  height: 100%;
+  height: 712px;
   grid-row: 3;
   display: grid;
   grid-template-columns: 1fr 512px;
@@ -11,6 +11,12 @@
   font-weight: 700;
   margin-top: 96px;
   position: relative;
+  &.footer--contact{
+    height: 200px;
+    .footer__rightBar{
+      background: $mainYellow;
+    }
+  }
   &::after{
     content: '';
     position: absolute;
@@ -113,6 +119,17 @@
     transform: translateX(-50%);
     .footer__link::after{
       background: url('../img/top-arrow.svg') no-repeat;
+    }
+  }
+}
+
+@media(max-width: 1250px){
+  .footer{
+    padding: 0 0 0 16px;
+    &__leftBar{
+      .logo{
+        left: 0px;
+      }
     }
   }
 }
