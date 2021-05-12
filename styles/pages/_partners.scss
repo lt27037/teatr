@@ -11,6 +11,10 @@
     &__wrapper{
       @include elementFlex(row, flex-start, center);
       flex-wrap: nowrap;
+      .partnersSection__logo{
+        height: auto;
+        object-fit: cover;
+      }
     }
     &__logo{
       margin-right: 46px;

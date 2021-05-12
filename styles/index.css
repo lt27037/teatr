@@ -2567,6 +2567,12 @@ body {
       flex-wrap: nowrap;
 }
 
+.container .partnersSection__wrapper .partnersSection__logo {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container .partnersSection__logo {
   margin-right: 46px;
 }
