@@ -2767,7 +2767,6 @@ body {
 
 .secondaryEvent, .primaryEvent {
   width: 608px;
-  height: 418px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2775,6 +2774,16 @@ body {
   -webkit-column-gap: 24px;
           column-gap: 24px;
   column-gap: 24px;
+}
+
+.secondaryEvent:hover, .primaryEvent:hover {
+  background: #EBEBEB;
+}
+
+.secondaryEvent:hover .secondaryEvent__button, .primaryEvent:hover .secondaryEvent__button {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  width: 40px;
 }
 
 .secondaryEvent__picture {
@@ -2858,12 +2867,21 @@ body {
 
 .primaryEvent {
   width: 100%;
-  height: 388px;
+}
+
+.primaryEvent:hover {
+  background: #EBEBEB;
+}
+
+.primaryEvent:hover .primaryEvent__button {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  width: 40px;
 }
 
 .primaryEvent__picture {
   width: 100%;
-  height: 388px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2871,6 +2889,7 @@ body {
 .primaryEvent__container {
   width: 100%;
   padding: 24px 24px 0 0;
+  max-width: unset;
 }
 
 .primaryEvent__title {

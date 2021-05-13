@@ -3,11 +3,17 @@
 
 .secondaryEvent{
   width: 608px;
-  height: 418px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 24px;
   column-gap: 24px;
+  &:hover{
+    background: $lightBgc-90;
+    .secondaryEvent__button{
+      transform: translateX(10px);
+      width: 40px;
+    }
+  }
   &__picture{
     width: 282px;
     height: 188px;
