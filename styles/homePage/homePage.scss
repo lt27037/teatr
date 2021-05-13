@@ -236,6 +236,13 @@
   }
 }
 
+@media(max-width: 1200px){
+  .container{
+    overflow-x: hidden;
+  }
+}
+  
+
 @media(max-width: 786px){
   .mainHeader__list{
     opacity: 1;

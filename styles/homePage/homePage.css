@@ -408,6 +408,7 @@
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
     z-index: 998;
+    overflow-y: auto;
   }
   .mainHeader__submenu::after, .homePageMenu__submenu::after {
     content: '';
@@ -1418,6 +1419,12 @@
 
 .container .archivesSection__item:active .archivesSection__item__content::after {
   visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    overflow-x: hidden;
+  }
 }
 
 @media (max-width: 786px) {

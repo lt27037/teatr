@@ -266,6 +266,7 @@
       padding: 218px 10px 0 10px;
       transition: transform .3s ease-in-out;
       z-index: 998;
+      overflow-y: auto;
       &::after{
         content: '';
         width: 24px;
