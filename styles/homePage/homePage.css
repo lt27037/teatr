@@ -1309,6 +1309,8 @@
   background: url("../../assets/img/arrow_back.svg") no-repeat;
   background-position: center;
   margin-right: 12px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container .programSection__title {
