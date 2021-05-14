@@ -868,6 +868,7 @@
   padding: 6px;
   -webkit-transition: background .2s;
   transition: background .2s;
+  width: 100%;
 }
 
 .primaryArticle:hover, .secondaryArticle:hover {
@@ -1141,6 +1142,10 @@
   padding: 96px 0 120px 0;
 }
 
+.container .newsSection .linkWrapper {
+  width: 100%;
+}
+
 .container .newsSection__header, .container .programSection__header, .container .archivesSection__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1309,14 +1314,14 @@
   background: url("../../assets/img/arrow_back.svg") no-repeat;
   background-position: center;
   margin-left: 12px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .container .programSection__header .button--prev {
   background: url("../../assets/img/arrow_back.svg") no-repeat;
   background-position: center;
   margin-right: 12px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .container .programSection__title {

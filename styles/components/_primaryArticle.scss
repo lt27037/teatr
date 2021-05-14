@@ -4,6 +4,7 @@
   @include elementFlex(row, stretch, flex-start);
   padding: 6px;
   transition: background .2s;
+  width: 100%;
   &:hover{
     background: $lightBgc-90;
     .primaryArticle__button{
