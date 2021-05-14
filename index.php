@@ -105,17 +105,17 @@
     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
         loop:true,
-        margin:10,
+        margin:48,
         nav:true,
         responsive:{
             0:{
-                items:1.15
+                items:1.2
             },
             600:{
-                items:1.6
+                items:1.7
             },
             1000:{
-                items:2.1
+                items:2.2
             }
         }
       })

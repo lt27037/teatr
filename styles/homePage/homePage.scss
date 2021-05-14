@@ -88,16 +88,14 @@
     color: $lightFont-100;
     &__title{
       @include font900($lightFont-100);
+      font-size: 36px;
     }
-    // .owl-carousel{
-    //   position: relative;
-    // }
-    // .owl-stage-outer{
-    //   position: absolute;
-    // }
     .owl-prev,
     .owl-next{
       visibility: hidden;
+    }
+    .owl-item{
+      margin-right: 48px;
     }
     &::after{
       content: '';
@@ -176,7 +174,7 @@
     }
     &__header{
       @extend .newsSection__header;
-      padding-bottom: 51px;
+      padding: 0 0 51px 12px;
     }
     &__title{
       @extend .newsSection__title;

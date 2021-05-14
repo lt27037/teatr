@@ -2768,13 +2768,13 @@ body {
 
 .secondaryEvent, .primaryEvent {
   width: 608px;
+  margin-right: 60px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 24px;
           column-gap: 24px;
-  column-gap: 24px;
 }
 
 .secondaryEvent:hover, .primaryEvent:hover {
@@ -2792,6 +2792,10 @@ body {
   height: 188px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.secondaryEvent__container {
+  padding-left: 0;
 }
 
 .secondaryEvent__date {
